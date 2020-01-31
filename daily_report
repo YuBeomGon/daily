@@ -5,3 +5,11 @@ Failed to get convolution algorithm. This is probably because cuDNN failed to in
 되다가 안된다는 경우가 꽤 있음.
 ternsorflow gpu version을 1.15에서 1.14로 downgrade후에 잘 동작한다. 1.15는 계속 안된다.
 이유를 알수는 없지만 호환성이 깨진듯
+
+위 이슈 관련 시도해 보았던 것
+1. 코드 리뷰 - 의외로 사소한 실수일 수 있다.
+2. nvidia gpu driver 재설치(clean 후 reinstall)
+3. cuda, cudnn 재설치
+4. tensorflow를 비롯한 python 가상환경 재설치
+5. 전역 pip list 삭제..
+6. tensorflow downgrade to 1.14 후 비로소 training 정상 동작.

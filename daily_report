@@ -1,1 +1,7 @@
 2020/01/31
+DeepSpeech training 도중 아래와 같은 cudnn error 발생
+Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above
+인터넷을 찾아본 결과 cuda/cudnn과 텐서플로우 등의 호환성 문제로 보이며 아직 cudnn이나 텐서플로우 등이 완벽하게 호환되지 않는 듯 하다. 
+되다가 안된다는 경우가 꽤 있음.
+ternsorflow gpu version을 1.15에서 1.14로 downgrade후에 잘 동작한다. 1.15는 계속 안된다.
+이유를 알수는 없지만 호환성이 깨진듯

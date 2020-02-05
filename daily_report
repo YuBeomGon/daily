@@ -49,10 +49,24 @@ tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution 
      
      Latest branch가 아닌 release branch로 받아서 테스트해야 두 PC의 환경이 완전히 똑같다. 
      
- 3. kenlm에서 MAX order가 6이고 7 이상으로 설정시 cmake를 이용해 빌드를 다시 해야 한다. 
+3. kenlm에서 MAX order가 6이고 7 이상으로 설정시 cmake를 이용해 빌드를 다시 해야 한다. 
      cmake -DKENLM_MAX_ORDER=10 ..
     파이썬 연동치 ds_decoder init할때 ngram order가 6을 초과해서 error 발생,
     6으로 바꾼 후 inferencing 성공
     자모에서 더 세분화할 경우를 테스트하려면 max_order를 10 이상으로 설정할 수 있어야 한다. 
- 
+    
+4. tensorflow 공식문서 한글 번역본 공부 
+   https://tensorflowkorea.gitbooks.io/tensorflow-kr/content/g3doc/how_tos/using_gpu/
+   v1.0에 대한 문서로 옛날 것, latest 한글 번역본 같이 볼 필요 있다. 
+   특정 변수만 저장하고 loading할수 있다. 즉 pretrained model의 변수를 layer 1~5까지 집어넣고 6번째 layer를 affine layer로 넣는 식으로 해서 transfer learning
+   등 가능
+   freezing  multi gpu 사용 등 cifar 예제 확인해 보자.
+   파이썬 사용자 친화적으로 편하지만 연산 속도가 느리다. 수치 연산이나 빅데이터 분석 등 연산량이 많은 작업을 위해 파이썬을 쓰는 것이 아닌, C++ 등으로 작성한 후
+   컴파일해서 해당 binary를 파이썬에서 import해서 쓰면 속도가 빠를 것이다. numpy나 scikitlearn 등이 이와 같은 목적으로 만들어진 것.
+   numpy를 사용할 수도 있지만 C++과 python과의 IO부분에서 병목현상이 발생할 수 있으므로 전체 deep learning의 연산부분은 하나의 static graph로 표현하고
+   session을 열어서 계산을 한번에 하는 것이 tensorflow이다. PYthon IO는 처음과 끝에 한번씩만 존재.
+   tensorflow에서 사용자 정의 operation등을 제공, tensorflow code를 다운받은 후 bazel을 이용한 빌드 필요.
+   
+   
+   
      

@@ -33,3 +33,5 @@ building '_webrtcvad' extension
   compilation terminated.
   error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
 git lfs 설치 중 apt package관련 설정등이 바뀐 것으로 보이며 apt-update 이후에 정상설치
+
+텐서플로우 관련 한글번역 문서 study 중

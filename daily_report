@@ -13,3 +13,23 @@ ternsorflow gpu version을 1.15에서 1.14로 downgrade후에 잘 동작한다. 
 4. tensorflow를 비롯한 python 가상환경 재설치
 5. 전역 pip list 삭제..
 6. tensorflow downgrade to 1.14 후 비로소 training 정상 동작.
+
+
+2020/02/03
+1/31 cudnn issue관련 training은 잘 되었지만 inference시에 ctc_decoder를 불러오는 부분에서 segmentation error 발생, 
+ctc decoder는 c++로 개발된 모듈을 binary형태로 파이썬에서 불러오는 형태로 현재 디버깅을 하기가 쉽지 않아 포맷 진행
+format 후에 pip3 -r requirement.txt 중 아래와 같은 error 발생, 
+building '_webrtcvad' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/cbits
+  creating build/temp.linux-x86_64-3.6/cbits/webrtc
+  creating build/temp.linux-x86_64-3.6/cbits/webrtc/common_audio
+  creating build/temp.linux-x86_64-3.6/cbits/webrtc/common_audio/signal_processing
+  creating build/temp.linux-x86_64-3.6/cbits/webrtc/common_audio/vad
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -DWEBRTC_POSIX -Icbits -I/usr/include/python3.6m -I/home/beomgon2/deepspeech-train-venv/include/python3.6m -c cbits/pywebrtcvad.c -o build/temp.linux-x86_64-3.6/cbits/pywebrtcvad.o
+  cbits/pywebrtcvad.c:1:10: fatal error: Python.h: No such file or directory
+   #include <Python.h>
+            ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+git lfs 설치 중 apt package관련 설정등이 바뀐 것으로 보이며 apt-update 이후에 정상설치

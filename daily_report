@@ -35,3 +35,24 @@ building '_webrtcvad' extension
 git lfs 설치 중 apt package관련 설정등이 바뀐 것으로 보이며 apt-update 이후에 정상설치
 
 텐서플로우 관련 한글번역 문서 study 중
+
+
+0205
+1. 딥러닝 교육 관련 소제목 및 내용 간략히 정리
+2. 2/3일에서 zeroth data기준 csv file format으로 변환, but 이후 training시 아래 에러 재발생
+tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+     [[{{node tower_0/conv1d/Conv2D}}]]
+     v0.7.0-alpha.1 버전에서 tensorflow-gpu version 1.14로 해도 여전히 발생, 
+     git latest code base로 변환, git 설치 문서 확인 중 TF_FORCE_GPU_ALLOW_GROWTH environment variable to true 로 세팅하라는 부분 확인
+     세팅 후 여전히 같은 에러 발생
+     tensorflow-gpu version 1.15에서 1.14로 다운그레이드 후 training 성공
+     
+     Latest branch가 아닌 release branch로 받아서 테스트해야 두 PC의 환경이 완전히 똑같다. 
+     
+ 3. kenlm에서 MAX order가 6이고 7 이상으로 설정시 cmake를 이용해 빌드를 다시 해야 한다. 
+     cmake -DKENLM_MAX_ORDER=10 ..
+    파이썬 연동치 ds_decoder init할때 ngram order가 6을 초과해서 error 발생,
+    6으로 바꾼 후 inferencing 성공
+    자모에서 더 세분화할 경우를 테스트하려면 max_order를 10 이상으로 설정할 수 있어야 한다. 
+ 
+     

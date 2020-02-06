@@ -74,5 +74,14 @@ tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution 
    
    
    0206
+1. DeepSpeech code review, data Feeding and modeling, input[batch_size, seq_len, feature] * weight[feature * num_hidden] 을 하면 자동적으로 
+   seq_len을 따라 dense layer가 수행이된다. fully connected layer를 통해서 feature를 뽑아낸다. 
+2. AI hub data training, 2 PC에서 one epoch당 약 90분 정도 소요됨
+3. tensorflow 한글 번역본 문서 확인
+4. 음성 발성 및 한글 창제 관련 서치
+todo
+1. Tensorflow 간단한 예제부터 C++ code 참조해보자. DeepSpeech외 다른 ASR EndtoEnd model 확인해 볼것.
+
    
      
+w

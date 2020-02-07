@@ -9,6 +9,8 @@
    FFT 란 : 주파수분석을 할때 주파수 bin의 개념을 도입 주파수를 블럭 단위로 양자화한다. 주파수 변환을 더 빠르게 할수 있다. 
    filter bank의 개념과 유사.
  2.  https://github.com/philipperemy/tensorflow-ctc-speech-recognition 예제 training 시작, 코드 분석 필요.
+   training이 잘 안되서 중지함
  
  3. audio to deep learning 관련 학습해보자. 
  https://www.endpoint.com/blog/2019/01/08/speech-recognition-with-tensorflow
+   중간에 notfound module error 발생

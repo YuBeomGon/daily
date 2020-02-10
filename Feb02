@@ -14,3 +14,7 @@
  3. audio to deep learning 관련 학습해보자. 
  https://www.endpoint.com/blog/2019/01/08/speech-recognition-with-tensorflow
    중간에 notfound module error 발생
+
+0210
+1. philipperemy training 중 gpu memory issue 발생(deep speech와 같이 돌려서), 주말 동안 어느 정도 정확해 진듯 하다.
+2. kamil의 경우 docker install 후 make run에서 CRIT Supervisor running as root 와 같은 에러 발생, 도커 uninstall후 재 테스트

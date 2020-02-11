@@ -18,3 +18,17 @@
 0210
 1. philipperemy training 중 gpu memory issue 발생(deep speech와 같이 돌려서), 주말 동안 어느 정도 정확해 진듯 하다.
 2. kamil의 경우 docker install 후 make run에서 CRIT Supervisor running as root 와 같은 에러 발생, 도커 uninstall후 재 테스트
+3. AI hub data로 테스트시 약 22%의 wer 발생, 음절단위임을 생각하면 wer은 조금 더 높아질 듯, 다만 train/test set을 사람별로 나눈게 아님,
+   zeroth data로 test시 약 음절 기준 약 68%나온다. 
+4. evaluation set을 zeroth로 잡고 over fittingdmf 잡아보자.
+
+0211
+1. MFCC가 화자 관계없이 순수하게 음성의 feature를 뽑는 것이라면 전혀 새로운 화자의 음성도 인식할 수 있어야 한다.
+2. AI hub data로 training, zeroth로 dev를 잡고 training해도 잘 안됨.
+   관련하여 zeroth domain에서 테스트 할것, ngram order를 6가 아닌 그 이상으로 주자, kenlm 및 ds decoder 확인 및 수정 필요
+3. FFT에서 주파수 영역과 주파수 크기에 대해 양자화가 이루어진다면 더 빨라질 수 있는 방법 없을까?
+4. 음성을 2d dimension으로 보고 2d convolution에 대해 생각해 봄, 시간에 대한 context를 뽑는 것은 의미가 있지만 freq domain으로 context를 뽑는 
+   것은 사실 의미가 없다. -> 1d convolution이 필요하다. spectogram등을 뽑을 때 normalization 등 다양한 방법 존재.
+   발성 및 청각에 대한 배경지식 공부, domain에 대한 지식이 필요하나 전문적인 용어로 인해 진입장벽이 있다. 
+   speech recognition도 인간의 청각시스템을 이해하고 그것을 dnn으로 모델링하는 것이 필요해 보인다. 
+   

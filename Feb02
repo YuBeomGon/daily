@@ -33,4 +33,9 @@
    speech recognition도 인간의 청각시스템을 이해하고 그것을 dnn으로 모델링하는 것이 필요해 보인다. -> 관련 스터디 필요
 5. kenlm compile 시 install Eigen3 in your home directory 에러는 아무 상관 없는 듯, arpa와 binary 잘 만들어진다. 
 
+todo
+1. 언어모델 12~15 gram으로 바꿔서 wer 볼것, shared lib 및 파이썬 래핑 확인 필요
+2. mfcc feature 개수를 현재 13에서 더 낮추어서 테스트 해 볼것, personal specific한 정보를 최대한 줄여야 한다. 
+
+
    

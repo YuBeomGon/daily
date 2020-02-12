@@ -43,6 +43,10 @@ todo
    - DeepSpeech/native_client/ctcdecoder내 build_common.py에서 max_order 15로 변경후 ds decoder 재 컴파일
    - dist내 생성된 whl파일을 이용 pip3 install로 ds_decoder 재설치하면 된다.
 2. weight관련 어느 정도 안정화 된 상태에서 gradient가 완만한 w는 많이 급격한 w는 조금씩 변경하도록 weight를 변경해볼 필요 있어 보임(장기 연구과제)
+3. Tensorflow 관련 강의 시청
+4. DeepSpeech code review and search - inference 하는 부분, data를 320ms(16 time step)씩 잘라서 model에 돌려서 output을 얻는다 .이것을 
+   wave file이 끝날때까지 돌리고 output tensor에 대해 ctc decoder를 돌려 inferencing한다. 
+   
      
 
 

@@ -37,5 +37,13 @@ todo
 1. 언어모델 12~15 gram으로 바꿔서 wer 볼것, shared lib 및 파이썬 래핑 확인 필요
 2. mfcc feature 개수를 현재 13에서 더 낮추어서 테스트 해 볼것, personal specific한 정보를 최대한 줄여야 한다. 
 
+0212
+1. dsdecoder 및 kenlm 에서 MAX_ORDER를 15로 변경후 deep speech decoding이 잘 되는 것 확인하였다. 
+   - DeepSpeech/native_client내에 kenlm을 삭제하고 git에서 새로 받은 후 max_order 15로 해서 recompile
+   - DeepSpeech/native_client/ctcdecoder내 build_common.py에서 max_order 15로 변경후 ds decoder 재 컴파일
+   - dist내 생성된 whl파일을 이용 pip3 install로 ds_decoder 재설치하면 된다.
+2. weight관련 어느 정도 안정화 된 상태에서 gradient가 완만한 w는 많이 급격한 w는 조금씩 변경하도록 weight를 변경해볼 필요 있어 보임(장기 연구과제)
+     
+
 
    

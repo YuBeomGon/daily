@@ -5,3 +5,5 @@
 2. DeepSpeech에서 winsize :32ms, stepsize :20ms를 각각 20ms 10ms로 바꿧다. data의 양이 늘어서인지 gpu out of memory 발생한다. 
    CPU로 텐서플로우 돌렸을때 1 iteration(64 minibatch)당 1분 가까이 걸리고 epoch으로 계산하면 1 epoch당 3시간 이상 걸릴 듯, 5mins vs 3 hours
 3. C++ 문법 클래스~다형성까지 
+4. tensorflow dataset api 관련 코드 공부, but tensorflow version 문제로 error가 자주 발생한다. tf version 2.0으로 넘어가야 하나.?
+   tensorflow source code를 직접 보지 말고, 그때 그때 궁금할때 찾아보는 식으로 할 것.

@@ -1,0 +1,4 @@
+0214
+1. sparse tensor란 0이 많은 tensor로서 연산의 효율화를 위해 전체 matrix를 다 표현하는 것이 아닌, 특정 방식으로 matrix를 표현한다. 
+   [0, 7, 0, 0, 8, 0, 0, 0, 0] ->  values = [7,8], indices = [[1], [5]], dense_shape = [9]
+   x = tf.SparseTensor(values=[7,8],indices=[[1],[5]],dense_shape=[9])

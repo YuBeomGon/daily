@@ -11,4 +11,9 @@
 0217 
 1. C++ template check
 2. python decoration
-3. Deep Speech input data pipe line 
+3. Deep Speech input data pipe line
+
+0218
+1. deepspeech 1d cnn도입해보자. client model로 배포까지 한번 해보자. 
+   input pipe line 및 native client 쪽 c++ code 같이 확인할 것
+

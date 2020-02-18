@@ -7,3 +7,8 @@
 3. C++ 문법 클래스~다형성까지 
 4. tensorflow dataset api 관련 코드 공부, but tensorflow version 문제로 error가 자주 발생한다. tf version 2.0으로 넘어가야 하나.?
    tensorflow source code를 직접 보지 말고, 그때 그때 궁금할때 찾아보는 식으로 할 것.
+   
+0217 
+1. C++ template check
+2. python decoration
+3. Deep Speech input data pipe line 

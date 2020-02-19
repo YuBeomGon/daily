@@ -23,3 +23,30 @@
     Please ensure that you have not altered the graph expected based on the checkpoint. Original error:
    tf.variable scope관련 확인 후 코드 수정할 것
 
+0219
+1. tf.variable_scope 과 tf.name_scope의 차이는?? 
+   둘이 비슷한데 tf.variable_scope이 조금 더 범용적인 듯, tf.get_variable을 사용했을 때 name_scope으로 묶여 있으면 prefix로 인식 안된다. 
+   model을 저장할때 tf.variable scope을 이용하여 저장해야 나중에 inference시에 모델 불러올시 error 발생 안함.
+   
+2. tensorboard 관련 공식 document 확인, 예제 코드 확인, 많이 써봐야 할듯.
+
+3. 영화 리뷰 긍정부정 분류 모델 학습, 
+   1. https://cyc1am3n.github.io/2018/11/10/classifying_korean_movie_review.html
+      naver dataset을 github에서 다운 가능
+      konlpy와 nltk등의 자연어처리 lib를 활용 자주 사용되는 단어의 token을 구하고 각 문장 또는 문단을 count 기반의 vector로 표현한다. 
+      token의 개수를 10000으로 했다면 문장/문단은 10000차원의 sparse한 vector로 표현될 것이다. td-idf로 하면 token별 가중치를 고려할 수 있다.
+      결국에는 word2vec으로 가야할듯, pretrained model(fasttext)등 이용할수도
+      Dense layer로 연결
+      keras를 사용해서 상당히 model 코드가 간단함,
+      inference까지 완료
+      
+   2. https://ratsgo.github.io/natural%20language%20processing/2017/03/19/CNN/
+      CNN을 이용, word2vec이 아닌 token별 one hot incoding 후 lookup table(word2vec)을 구하는 부분까지 training에 포함됨
+      왓챠에서 영화 리뷰를 다운받는데 웹크롤링 등을 통해서 데이터를 따로 확보해야 한다.
+      2D CNN을 이용해서 1d CNN처럼 사용
+   
+4. jupyter-lab과 tensorflow import error관련 환경설정 문제
+      기존에 설치된 jupyterlab을 삭제하고 venv 가상환경에서 jupyter-lab과 tensorflow를 설치함, 이후 잘 된다. python kernel에 대한 경로가 꼬인듯
+      
+   
+      

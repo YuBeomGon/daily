@@ -1,2 +1,8 @@
 0221
-1. data iteration 부분 확인하고 tf.api.dataset쓰는 것도 한번 고려해 보자. 
+1. data iteration 부분 확인하고 tf.api.dataset쓰는 것도 한번 고려해 보자.
+2. generator 및 zip 관련수정 후 batch iteration 성공, text 분류 성공하였다. 
+3. Fasttext 관련 서치
+   fasttext training, gensim을 이용 word2vec으로 model load시 out of vocab 에러 발생가능
+   직접 fasttext를 로드해야 없는 단어도 벡터화 가능
+   문장은 단순히 각 단어 벡터의 평균을 내도 좋다.
+   주말동안 word2vec에 대해 학습해 보자.

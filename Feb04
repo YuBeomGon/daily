@@ -9,3 +9,23 @@
 
 0224
 1. sent2vec을 이용 문장 벡터화 후에 신경망 모델 훈련, 약 75% accuracy
+2. sentvec model training시 corpus를 형태소 분석 후 명사, 형용사 부사 동사만 취해서 corpus로 저장후 이것에 대한 fasttext training실시.
+   이 sen2vec을 이용 신경망 training시 약 70% 정도 나온다.
+3. gensim, sklearn 간단리뷰, sklearn을 통해 count 기반의 bags of word, tf idf표현할 수 있다. 하지만 단어의 개수 등 지정하는 법 아직 모르겠음
+   library가 아닌 구현된 코드 이용하는 것도 나쁘지 않다. tf idf는 코드 구해야 됨.
+4. bert, text mining의 끝판왕, 복잡하고 시간이 오래 걸릴 듯. pretraining을 많이 해야 한다. 
+
+5. 하고자 하는 모델에 맞게 fine tunning된 모델을 사용해 보자.(bert는 차선)
+   1. cnn model에서 input lookup table saving, -> input lookup table은 분류를 하기 위해 가장 적절한 값으로 저장.
+      but labeled data가 8000개가 안된다. 
+      전체 data를 대상으로 fast text등을 학습시키는 것이 더 좋다.
+   2. overlapping window + FCN or convolution ?
+      convolution을 하면 중첩해서 쌓았을때 context window가 넓어지는 장점 존재.
+      FCN은 window size가 overlapping window로 고정됨, 그 외에는 동일하다.
+   3. 영화에서는  9-10 : good, 1~4 : bad로 output class를 2로 두었다. 그렇게 두지 말고 output class도 0~1까지 label에 따라 확률로 둬도 될까?
+      그럴 경우에도 cross entropy 계산 가능할까?
+      안된다면 평점에 맞게 data를 비례적으로 구성..
+      
+      
+
+   

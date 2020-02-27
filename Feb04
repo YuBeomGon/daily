@@ -26,6 +26,15 @@
       그럴 경우에도 cross entropy 계산 가능할까?
       안된다면 평점에 맞게 data를 비례적으로 구성..
       
+0225
+1. perplexity란 언어모델 관련 측정 도구, training set으로 정확도 측정한다.
+
+0227
+1. keras를 이용한 영화리뷰 분류, word embeding, tokenize, dnn,cnn,lstm을 이용한 분류 예제 실행
+   https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
+2. bert 예제 실행
+
+      
       
 
    

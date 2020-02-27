@@ -33,6 +33,8 @@
 1. keras를 이용한 영화리뷰 분류, word embeding, tokenize, dnn,cnn,lstm을 이용한 분류 예제 실행
    https://stackabuse.com/text-classification-with-bert-tokenizer-and-tf-2-0-in-python/
 2. bert 예제 실행
+   bert embedding 및 bert classify training 모두 gpu outofmemory issue로 training 불가능하다.
+   google colab에서 테스트 필요
 
       
       

@@ -5,3 +5,8 @@ todo
 3. albert training
 4. VLSI/verilog, compile 관련 반도체 소자단에서부터 실제 응용프로그램단까지 대략적으로 이해해 보자.
    compiler, OS 등도 조금 살펴볼것, 
+5. tree 자료구조에 대해서 알아보자.
+   
+   compiler - frontend : tokenization - parser(automata와 같은 그래프) - symantic(symbol table)
+              backend  : machine independent code(like byte code) - register mapping(graph color algorithm) - assembly code - 
+                         linking/assembler(library, other object) - binary

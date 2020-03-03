@@ -3,4 +3,5 @@ todo
 1. ELMO 관련 리뷰
 2. Bert 한국어/영어 classify문제 확인, vocab.txt 어떻게 만드는지 확인
 3. albert training
-4. VLSI/very log, compile 관련 
+4. VLSI/verilog, compile 관련 반도체 소자단에서부터 실제 응용프로그램단까지 대략적으로 이해해 보자.
+   compiler, OS 등도 조금 살펴볼것, 

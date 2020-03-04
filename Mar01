@@ -17,3 +17,4 @@ todo
 2. tree 구조에 대한 코드 리뷰
 3. Bert에서 왜 positional encoding 값을 더해줄까? 곱하지 않고?
    출력층의 값 뿐만 아니라 각 hidden layer의 값도 가중합하여 embedding vector로 쓰면 어떨까?
+4. ELMO / transformer bert 관련 리뷰(positional embedding & attention)

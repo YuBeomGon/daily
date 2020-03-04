@@ -10,3 +10,10 @@ todo
    compiler - frontend : tokenization - parser(automata와 같은 그래프) - symantic(symbol table)
               backend  : machine independent code(like byte code) - register mapping(graph color algorithm) - assembly code - 
                          linking/assembler(library, other object) - binary
+                         
+1. nnlm-en-dim128 - neural net language model, token의 임베딩 lookup table을 만드는 것이 목표로 언어모델을 토대로 신경망 업데이트를 하면서
+   look up table을 구한다. -> 나중에 더 간단한 word2vec 등으로 대체
+   https://ratsgo.github.io/from%20frequency%20to%20semantics/2017/03/29/NNLM/
+2. tree 구조에 대한 코드 리뷰
+3. Bert에서 왜 positional encoding 값을 더해줄까? 곱하지 않고?
+   출력층의 값 뿐만 아니라 각 hidden layer의 값도 가중합하여 embedding vector로 쓰면 어떨까?

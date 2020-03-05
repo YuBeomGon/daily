@@ -18,3 +18,10 @@ todo
 3. Bert에서 왜 positional encoding 값을 더해줄까? 곱하지 않고?
    출력층의 값 뿐만 아니라 각 hidden layer의 값도 가중합하여 embedding vector로 쓰면 어떨까?
 4. ELMO / transformer bert 관련 리뷰(positional embedding & attention)
+
+5. bert embedding을 이용 IMDB 및 naver 영화리뷰에 대한 분류 테스트, naver 영화리뷰 84.4% acc (bert-tf1/movie_class_bert.ipynb)
+6. vocab.txt 생성 성공 for albert
+
+0305
+1. albert pretrain file 생성 성공(약 2시간 정도 기다려야 한다.)
+2. pretraining을 tensorflow-cpu에서 돌리는데 memory를 많이 사용

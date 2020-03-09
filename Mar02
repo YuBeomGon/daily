@@ -1,3 +1,10 @@
 0306
 1. tensorflow estimator관련 예제 확인
 2. transformer encoder관련 스터디
+
+0309 
+1. albert example 예제 실행, pretraining완료 및 fine tunning까지 됐지만 결과가 잘 안나와서 코드를 좀 더 깊이 봐야 한다.
+2. albert 논문 리뷰
+  - gpu memory issue로 인한 gradient accumulation, gradient checkpoint, second order optimizaiton등의 방법이 있지만
+    albert는 word embedding matrix factorization + layer weight sharing을 통해 parameter의 수를 줄임으로 gpu memory를 절약하였다고.
+    

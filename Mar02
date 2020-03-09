@@ -6,5 +6,24 @@
 1. albert example 예제 실행, pretraining완료 및 fine tunning까지 됐지만 결과가 잘 안나와서 코드를 좀 더 깊이 봐야 한다.
 2. albert 논문 리뷰
   - gpu memory issue로 인한 gradient accumulation, gradient checkpoint, second order optimizaiton등의 방법이 있지만
-    albert는 word embedding matrix factorization + layer weight sharing을 통해 parameter의 수를 줄임으로 gpu memory를 절약하였다고.
+    albert는 word embedding matrix factorization + layer weight sharing을 통해 parameter의 수를 줄임으로 gpu memory를 절약하였다고,
+    SOP, bert에서 다음 문장을 예측할때 오답을 임의로 선택해서 사실상 학습에 도움이 되지 않았다. albert에서는 오답을 정답의 역순으로 대체하였다.
+    학습이 더 어려워졌고 학습의 의미가 있다. 
+3. bert 논문 리뷰 
+   - fine tunning시 pretrained 된 파라미터를 load하고 전체 parameter에 대해 fine tunning을 한다. but how about freezing low layer, low layer
+     가 출력과 상대적으로 관련이 적다면 frezzing을 한다면 memory를 save할 수 있다.
+     
+4. annotated transformer 관련 코드 리뷰 - pytorch는 skip, tensorflow는 추후 보자.
+     
+5. 파이썬 super keyword : 자식클래스가 부모클래스를 상속할 때, overridig을 한 method에 대해서 부모클래스의 내용도 동작하게 하고 싶을때 super
+   를 사용한다. 
+   
+6. bert code reivew.
+
+0310
+do list
+1. multiple output classification(label이 여러개 중에서 한개를 택하는 게 아니라 여러개 중에서 2개 3개일수도 있다.)
+   how?
+2. bert & albert code review
+3. overlapping window + fcn
     

@@ -34,5 +34,10 @@ do list
    https://github.com/javaidnabi31/Multi-Label-Text-classification-Using-BERT/blob/master/multi-label-classification-bert.ipynb
    multi labeled classification에서 주의할 점, sampling(batch)을 할때 각 label별로 bias되지 않게 random shuffle해야 한다.
    (https://towardsdatascience.com/multi-label-image-classification-in-tensorflow-2-0-7d4cf8a4bc72)
+4. sklearn의 빈도수 기반 classification 테스트
+5. multi labeled 문제 푸는 방법 
+   1. 여러개의 binary classification문제로 나눠 푼다.
+   2. multi label문제를 multi class문제로 변환해서 푼다.
+   3. multi label + cross entropy with sigmoid (not softmax)
 
     

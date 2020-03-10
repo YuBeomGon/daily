@@ -39,5 +39,10 @@ do list
    1. 여러개의 binary classification문제로 나눠 푼다.
    2. multi label문제를 multi class문제로 변환해서 푼다.
    3. multi label + cross entropy with sigmoid (not softmax)
+6. bert 관련 token b는 특정 test case(두문장 연속성 체크)에서만 쓰이고 보통은 token_a만 쓰인다. 문장별로 들어간다. 문단과 문단의 구분은 empty line
+   으로 구분한다. 따라서 input csv파일을 만들때 그렇게 만들어져 있어야 한다.
+   tokenizer에서 token화 및 interger로 바꾸는 부분만 있는 듯, 그럼 embedding vector로 변환 + positional embedding + sentence embedding 더하는 부분은 
+   어디에 있나?
+   
 
     

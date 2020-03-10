@@ -26,4 +26,9 @@ do list
    how?
 2. bert & albert code review
 3. overlapping window + fcn
+
+1. gradient accumulation 관련 reading, how to use in keras 관련 medium 체크(pip install runai)
+2. gradient를 구할때 메모리 최적화하면서 어떻게?? 관련 생각 정리
+3. multi labeled classification 관련 예제 체크
+
     

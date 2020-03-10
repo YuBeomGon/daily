@@ -30,5 +30,8 @@ do list
 1. gradient accumulation 관련 reading, how to use in keras 관련 medium 체크(pip install runai)
 2. gradient를 구할때 메모리 최적화하면서 어떻게?? 관련 생각 정리
 3. multi labeled classification 관련 예제 체크
+   bert + multi labeled example review
+   https://github.com/javaidnabi31/Multi-Label-Text-classification-Using-BERT/blob/master/multi-label-classification-bert.ipynb
+   multi labeled classification에서 주의할 점, sampling(batch)을 할때 각 label별로 bias되지 않게 random shuffle해야 한다.
 
     

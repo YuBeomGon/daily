@@ -26,7 +26,7 @@ do list
    how?
 2. bert & albert code review
 3. overlapping window + fcn
-
+doing
 1. gradient accumulation 관련 reading, how to use in keras 관련 medium 체크(pip install runai)
 2. gradient를 구할때 메모리 최적화하면서 어떻게?? 관련 생각 정리
 3. multi labeled classification 관련 예제 체크
@@ -46,9 +46,8 @@ do list
    
    
    0311
- 1. bert tokenizer는 tokenizer + id만 담당한다. embedding으로 바꾸는 부분은 modeling하는 부분에 tf.embedding lookup에서 가져온다. pretrained
-    등을 가져오는 듯 하다.
-    
-   
+ 1. bert tokenizer는 tokenizer + id만 담당한다. embedding으로 바꾸는 부분은 modeling하는 부분에 있다. keras의 경우 layer를 쌓을때 맨 처음
+    embedding layer를 쌓는데 이때 초기화를 하고 나중에 학습에 의해 학습된다. bert의 경우 modelling하는 부분에서 embeding + position + segment
+    등을 더해주는 부분이 있다. 
 
     

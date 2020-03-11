@@ -50,6 +50,8 @@ doing
     embedding layer를 쌓는데 이때 초기화를 하고 나중에 학습에 의해 학습된다. bert의 경우 modelling하는 부분에서 embeding + position + segment
     등을 더해주는 부분이 있다. 
  2. tx.example Fundamentally, a tf.Example is a {"string": tf.train.Feature} mapping. 
+ 3. 논문을 보면 bert의 입력은 최대 2문장이다. 그러면 여러줄로 이루어진 문단의 경우 window size of sentence를 2로 해서 들어가는 것일까?
+    fine tunning시에 text data를 1문장씩 끊어서 입력하고 각각 나온 cls token을 이용하나?
  
 
     

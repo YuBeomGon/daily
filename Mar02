@@ -49,5 +49,7 @@ doing
  1. bert tokenizer는 tokenizer + id만 담당한다. embedding으로 바꾸는 부분은 modeling하는 부분에 있다. keras의 경우 layer를 쌓을때 맨 처음
     embedding layer를 쌓는데 이때 초기화를 하고 나중에 학습에 의해 학습된다. bert의 경우 modelling하는 부분에서 embeding + position + segment
     등을 더해주는 부분이 있다. 
+ 2. tx.example Fundamentally, a tf.Example is a {"string": tf.train.Feature} mapping. 
+ 
 
     

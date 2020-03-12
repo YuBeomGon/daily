@@ -52,7 +52,18 @@ doing
  2. tx.example Fundamentally, a tf.Example is a {"string": tf.train.Feature} mapping. 
  3. 논문을 보면 bert의 입력은 최대 2문장이다. 그러면 여러줄로 이루어진 문단의 경우 window size of sentence를 2로 해서 들어가는 것일까?
     fine tunning시에 text data를 1문장씩 끊어서 입력하고 각각 나온 cls token을 이용하나?  
-    -> answer 논문을 보면 sentence가 문장이 아닌 span of contiguous text라고 표현한다. 문단이라고 봐야 할것 같다. 
+    -> answer 논문을 보면 sentence가 문장이 아닌 span of contiguous text라고 표현한다. 문단이라고 봐야 할것 같다.
+    
+    
+ 0312
+ to do
+ 1. albert/ bert code reivew
+    create pretrain, run_pretrain, io, how to do
+ 
+ 
+ 1. bert tokenizer
+    token의 개수 30000로 하지 말고 1000~2000개로 corpus에 specific하게 확 줄이자.
+    open source를 돌리거나 수동으로 vocab.txt 수정하자.
  
 
     

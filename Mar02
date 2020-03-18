@@ -89,5 +89,10 @@ doing
     fine tunning 횟수를 늘리고 내일 확인 예정
     https://ratsgo.github.io/embedding/downloaddata.html
     naver 영화 리뷰를 대상으로 vocab.txt 생성부터 pretraining까지 완료, fine tunning 진행 중, 내일 결과 확인해 보자.
+    
+ 6. multi label classification의 경우 대부분 0이고 이로 인해 학습이 안 이루어질 수 있다. keras에 weight를 주는 방법이 있다. 
+    또는 customized loss function을 사용해 보자.  아래 링크 참조
+    https://stackoverflow.com/questions/50686217/keras-how-is-accuracy-calculated-for-multi-label-classification
+    https://stats.stackexchange.com/questions/261128/neural-network-for-multi-label-classification-with-large-number-of-classes-outpu/313922#313922
 
     

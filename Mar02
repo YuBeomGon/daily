@@ -64,6 +64,17 @@ doing
  1. bert tokenizer
     token의 개수 30000로 하지 말고 1000~2000개로 corpus에 specific하게 확 줄이자.
     open source를 돌리거나 수동으로 vocab.txt 수정하자.
+ 2. runconfig -training run시 관련된 configuration을 말하는 듯 tpu/gpu thread등
  
+ 0316~0317
+ 1. multi label classification
+    상위 4개 label에 대해 multi label classification 결과 약 77%까지(0으로 초기화시 50%)
+    상위 8개 label에 대해 multi label classification 결과 약 88%까지(0으로 초기화시 77%)
+    mecab과 okt 별 차이 없다.
+    bidirectional LSTM 사용
+    pandas dataframe 및 정규식 관련 숙련 필요.
+ 2. bert 관련 sample code 수정
+    naver 영화리뷰에서 일부분 data로 동작 확인
+    naver 전체 data pretraining 중 out of memory 
 
     

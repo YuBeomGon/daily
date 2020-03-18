@@ -84,5 +84,10 @@ doing
     질문 및 답변이라면 segment id를 각각 0, 1로 맞춰야 한다. 
     
  4. biobert는 english only로 한국어에 대해 쓸수 없다.
+ 
+ 5. pretrained된 bert 한국어 모델을 다운받은 후 animal medical classification에 fine tunning해서 동작함 확인
+    fine tunning 횟수를 늘리고 내일 확인 예정
+    https://ratsgo.github.io/embedding/downloaddata.html
+    naver 영화 리뷰를 대상으로 vocab.txt 생성부터 pretraining까지 완료, fine tunning 진행 중, 내일 결과 확인해 보자.
 
     

@@ -74,7 +74,7 @@ doing
     bidirectional LSTM 사용
     pandas dataframe 및 정규식 관련 숙련 필요.
  2. bert 관련 sample code 수정
-    naver 영화리뷰에서 일부분 data로 동작 확인
+    naver 영화리뷰에서 일부분 data로 동작 확인, run_pretrain_data 수행 시 do_lower_case를 false로 해야 한글에 대해 training data가 제대로 생서왼다.
     naver 전체 data pretraining 중 out of memory 
 
     

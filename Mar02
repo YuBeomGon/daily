@@ -82,5 +82,7 @@ doing
     fine tuning시에는 목적에 따라 text_b가 있을수도 없을수도 있다. 단순한 classfication이라면 text_b는 없어도 된다.
     즉 segment_id 가 all 0(pretraining에서 0 0 0 0 1 1 1 ...이라는 전제)으로 해도 된다. 
     질문 및 답변이라면 segment id를 각각 0, 1로 맞춰야 한다. 
+    
+ 4. biobert는 english only로 한국어에 대해 쓸수 없다.
 
     

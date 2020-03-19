@@ -97,3 +97,7 @@ doing
 
  0319
  1. google colab이 연결이 끊겨서 테스트 불가능하다.
+ 2. keras customized loss function을 줘서 1과 0의 갯수가 다를 때 weight를 줄수 있는 loss function을 정의하였다. 
+    weighted_binary_crossentropy, but 성능이 좋아졌는지 체감이 잘 안됨.
+    multi label에 대해 각각의 case마다 모든 lable이 맞는 accuracy를 구한 결과 약 30~40% (label 8개 일시)
+    label 4개일 때 약 40%

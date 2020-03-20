@@ -5,3 +5,5 @@
 2. naver 영화 리뷰에 대한 pretraining 시작 warm up :30000, total 180000 max_seq_length 64
    data 전처리 어제 저녁 완료
 3. animal data에 대한 multi class 작업, 증상코드가 아닌 진단코드로 하자.
+4. 진단코드 상위 21개(100개 이상) 에 대한 multi class classification 결과 약 60% accuracy
+   label을 id로 바꾼 후 one hot vector로 바꿔줘야 한다. 나중에 np.argmax로 결과값 확인 용이하다.

@@ -7,3 +7,14 @@
 3. animal data에 대한 multi class 작업, 증상코드가 아닌 진단코드로 하자.
 4. 진단코드 상위 21개(100개 이상) 에 대한 multi class classification 결과 약 60% accuracy
    label을 id로 바꾼 후 one hot vector로 바꿔줘야 한다. 나중에 np.argmax로 결과값 확인 용이하다.
+   
+0323
+bert/albert pretraining/fine tunning
+
+0324
+1. albert pre/fine tunning with naver movie review, (150000~180000 steps for pretrain and fine tune steps) naver train data is used for tfrecord file
+   accuracy is 82~83%
+2. A detailed example of how to use data generators with Keras 리뷰
+3. text clustering( need to make sentence or document to vector using word2vec or bert etc)
+   https://stackoverflow.com/questions/55619176/how-to-cluster-similar-sentences-using-bert
+

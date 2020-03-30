@@ -18,3 +18,16 @@ bert/albert pretraining/fine tunning
 3. text clustering( need to make sentence or document to vector using word2vec or bert etc)
    https://stackoverflow.com/questions/55619176/how-to-cluster-similar-sentences-using-bert
 
+0327~0330
+1. pet data에 대해 albert pre/fine tunning 결과 100% 확인
+   pretraining시 corpus를 test, eval set을 제외하고 다시 pre/fine tuninning 진행 중
+   data set이 작기 때문에 편향되어 있고 이로 인해 새로운 dataset에 대해 test를 할때 결과가 잘 안나올 수 있다.
+   정확도를 낮추더라도 overfit되지 않고 정규화되도록 하는 방안 고민 필요.
+   data generation or simulation
+   문장 순서 바꾸기, or sentence vector에 적정한 수준의 noise 추가??
+  
+2. albert를 keras porting하는 법 관련 체크, bert to keras를 참고하고자 하나 error 발생
+   https://colab.research.google.com/drive/1UQ-76_hNyU6U2Emkw9qj-Cf1NUt0SPc_#forceEdit=true&sandboxMode=true&scrollTo=kZT3munMvw44
+   huggingface/transformer관련 더 확인하자.
+   
+3. 

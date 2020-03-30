@@ -30,4 +30,4 @@ bert/albert pretraining/fine tunning
    https://colab.research.google.com/drive/1UQ-76_hNyU6U2Emkw9qj-Cf1NUt0SPc_#forceEdit=true&sandboxMode=true&scrollTo=kZT3munMvw44
    huggingface/transformer관련 더 확인하자.
    
-3. 
+3. unlabeled data에 대한 clustering 공부해보자. bert를 이용한 doc2vec 후 clustering??

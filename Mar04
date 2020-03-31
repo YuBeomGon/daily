@@ -25,6 +25,15 @@ bert/albert pretraining/fine tunning
    정확도를 낮추더라도 overfit되지 않고 정규화되도록 하는 방안 고민 필요.
    data generation or simulation
    문장 순서 바꾸기, or sentence vector에 적정한 수준의 noise 추가??
+   
+0331
+1. data simulation holding
+2. text clustering?
+   bert embedding + clustering, 관련 review가 별로 없다. 텍스트 및 목적에 맞게 고민해야 한다.
+   animal pet의 경우 label이 단순히 id가 아닌 정보가 담겨 있다. label을 조금 더 문장 수준으로 적고 
+   transcription corpus로 pretrain한 후 fine tune까지 조금 해 주고, SE에 대한 bert embedding과 label에 대한 Bert embedding을 
+   similarity를 비교하는 식으로 찾는 것은 어떨까?? unsupervised learning을 통해 최대한 label을 맞춰놓기
+3. bert 내용 리뷰 및 code reivew, korquad1.0 
   
 2. albert를 keras porting하는 법 관련 체크, bert to keras를 참고하고자 하나 error 발생
    https://colab.research.google.com/drive/1UQ-76_hNyU6U2Emkw9qj-Cf1NUt0SPc_#forceEdit=true&sandboxMode=true&scrollTo=kZT3munMvw44

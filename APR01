@@ -1,0 +1,4 @@
+0403
+1. 새로 받은 pet data에 대해 albert pretraining/fine tunning진행
+2. bert fine tunning, 10~20% 정도 성능이 별로 좋지 안다.
+3. bert code reivew

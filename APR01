@@ -2,3 +2,10 @@
 1. 새로 받은 pet data에 대해 albert pretraining/fine tunning진행
 2. bert fine tunning, 10~20% 정도 성능이 별로 좋지 안다.
 3. bert code reivew
+
+0406
+1. bert + keras fine tunning with pet data
+   no gradient defined for op: einsum bert fine 에러가 나오면서 학습이 진행되지 않음,
+   internet search 결과 tensorflow 1, 2 version에서 공통적으로 나오는 현상 같으며, trainable을 False로 하거나 
+   keras 사용자 정의 층을 안 쌓으면 발생 안한다고 함, But 그럴 수 없는 상태
+   

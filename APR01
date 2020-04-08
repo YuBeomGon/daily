@@ -15,3 +15,7 @@
 2. bert pretrained model(multi lingual) + fine tunning, 약 60%(25 class)
 3. bert pretrained model + pretraining with custom corpus 완료, fine tunning확인 
    
+0408
+1. bert pretraining/ fine tunning 진행
+2. bert code review
+3. estimator keras study

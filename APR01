@@ -9,3 +9,9 @@
    internet search 결과 tensorflow 1, 2 version에서 공통적으로 나오는 현상 같으며, trainable을 False로 하거나 
    keras 사용자 정의 층을 안 쌓으면 발생 안한다고 함, But 그럴 수 없는 상태
    
+0407
+1. albert pretraining + fine tunning 
+   의료데이터의 경우 95~99%의 정확도를 보임(25, 50 class)
+2. bert pretrained model(multi lingual) + fine tunning, 약 60%(25 class)
+3. bert pretrained model + pretraining with custom corpus 완료, fine tunning확인 
+   

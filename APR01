@@ -19,3 +19,5 @@
 1. bert pretraining/ fine tunning 진행
 2. bert code review
 3. estimator keras study
+4. bert multi lingual + pretrain(50000) + fine tune하니 pretrain하기 전보다 약 5% 더 accuracy가 좋아짐.
+

@@ -19,5 +19,11 @@
 1. bert pretraining/ fine tunning 진행
 2. bert code review
 3. estimator keras study
-4. bert multi lingual + pretrain(50000) + fine tune하니 pretrain하기 전보다 약 5% 더 accuracy가 좋아짐.
+4. bert multi lingual + pretrain(50000) + fine tune하니 pretrain하기 전보다 약 5% 더 accuracy가 좋아짐(62~63%)
+   bert multi lingual + pretrain(180000) + fine tune
+   {'eval_accuracy': 0.625, 'loss': 2.2071123, 'global_step': 13680}, pretraining 50000과 별 차이 없다.
+
+0409
+1. bert pretraining시 loss계산이 mask lm에 대해서만 loss를 계산하는지, 
+   mask lm은 mask, wrong, right word(80%, 10%, 10%)로 나뉘는데 label은 모두 원래 label을 예측하는 걸까? 상식적으로 그게 맞는 것 같다.
 

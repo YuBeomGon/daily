@@ -1,0 +1,7 @@
+0410
+1. hub.kerasLayer를 통해 pretrained bert or albert model을 keras에서 이용 가능하다. 그러나 trainable=True가 동작하지 않아서
+   fine tunning이 불가하다. 
+   custom class를 정의해야 한다.
+   
+2. keras 공부
+3. super(class, self).__init__ python2에서 이렇게 한다.

@@ -5,3 +5,11 @@
    
 2. keras 공부
 3. super(class, self).__init__ python2에서 이렇게 한다.
+4. __init__
+   __call__ (여기서 build와 call을 부르도록 keras.layer(backend)에서 설정되어 있다.
+   
+0413
+1. transformer 리뷰
+2. einsum관련 체크
+3. hub.keraslayer, tf.module관련 확인, hub.keraslayer(bert, trainable=True)가 되는 것 찾았으나 학습이 잘 안되는 것 같다.
+   https://colab.research.google.com/drive/1UQ-76_hNyU6U2Emkw9qj-Cf1NUt0SPc_#scrollTo=XXYcDM53V05P&forceEdit=true&sandboxMode=true

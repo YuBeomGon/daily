@@ -11,5 +11,13 @@
 0413
 1. transformer 리뷰
 2. einsum관련 체크
-3. hub.keraslayer, tf.module관련 확인, hub.keraslayer(bert, trainable=True)가 되는 것 찾았으나 학습이 잘 안되는 것 같다.
+3. hub.keraslayer, tf.module관련 확인, hub.keraslayer(bert, trainable=True)가 되는 것 찾았으나 학습이 잘 안되는 것 같다.(tf 2.1 version에서)
    https://colab.research.google.com/drive/1UQ-76_hNyU6U2Emkw9qj-Cf1NUt0SPc_#scrollTo=XXYcDM53V05P&forceEdit=true&sandboxMode=true
+   
+4. hub.module로 로드하는 방법, 사전학습된 pretrained model로는 잘 되나, customized pretrained 또는 fine tune된 model로 load하는 방법 체크
+   tf.estimator.saved_model을 이용하여 save를 하면 saved model이 만들어지나, load가 되지 않음, tfhub_module.hb도 있어야 될 것 같은데
+   어떻게 생성??
+   
+0416
+1. noise 추가
+2. hub.module로 load하는 법 체크

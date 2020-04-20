@@ -21,3 +21,10 @@
 0416
 1. noise 추가
 2. hub.module로 load하는 법 체크
+
+
+0420
+1. albert code reivew & add noise 완료
+2. Keras + bert 완료(bert-for-tf2이용), 영어 리뷰 데이터에 대해 동작 확인
+3. python 관련 공부
+

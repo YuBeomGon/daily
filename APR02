@@ -24,7 +24,14 @@
 
 
 0420
-1. albert code reivew & add noise 완료
+1. albert code reivew & add noise 완료, but memory를 많이 잡아 먹는다. (file size가 클때 2GB초과로 인해 에러 발생)
 2. Keras + bert 완료(bert-for-tf2이용), 영어 리뷰 데이터에 대해 동작 확인
 3. python 관련 공부
+
+0421
+1. tensorflow code 공부
+2. dataset api관련 확인, batch별로 noise 추가 가능한지 확인(동작 x)
+
+0422
+1. keras에서 fine tunning은 동작하는 것을 확인, 그러나 pretrained model에서 weight loading하는 부분 구현 필요(naming check)
 

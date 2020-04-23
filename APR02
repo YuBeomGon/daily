@@ -35,3 +35,12 @@
 0422
 1. keras에서 fine tunning은 동작하는 것을 확인, 그러나 pretrained model에서 weight loading하는 부분 구현 필요(naming check)
 
+0423
+1. Kmeans clustering (bert as a service, embedding as a service)
+   문장을 벡터로 바꾼 후 클러스터링 수행
+        Error: no centroid defined for empty cluster.
+        Try setting argument 'avoid_empty_clusters' to True
+   특정 클러스터에 하나도 포함이 안되서 에러 발생하는 것으로 보임, flag setting 후 미발생
+   
+   
+

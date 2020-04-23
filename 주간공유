@@ -1,0 +1,28 @@
+1. 동물 진단 코드 관련
+  Data simulation(estimator) - 문장 순서, 단어 순서, random token masking, random noise 추가
+    - random noise 추가 - batch 별 random noise 추가, 매번 같은 noise가 추가되는 듯 보임
+        def add_gaussian_noise(input_tensor, std) :
+            noise = tf.random.truncated_normal(shape=tf.shape(input_tensor), mean=0.0, stddev=std, dtype=tf.float32)
+            return input_tensor + noise
+       
+    - random noise 추가 - data set에 추가로 random noise를 더해서 새로 data set을 생성
+        동작은 확인하였으나, data set 생성 시간이 소요되며 file의 size가 커짐, 이렇게 쓴다면 tfrecord file 및 generator 등 이용할 필요가 있다.
+        
+  from estimator to Keras (batch size 증가 목적)
+    - hub.keraslayer(training 잘 안됨)
+    - hub.module(google 제공된 사전학습 모델로 fine tunning가능 But customized 사전학습모델로는 아직 방법 찾지 못함)
+    - bert-for-tf2 
+      - keras로 code 수정 후 fine tunning 기본 동작 확인
+      - But gradient accumulation의 경우 op가 추가되므로 적용하려면 pre training부터 op추가되도록 코드 수정 및 훈련 필요
+      - keras porting의 경우에도 estimator에서 사전학습된 모델과 제공되는 모델간의 name space의 구조 및 name이 달라 사전학습된 weight가 load 안됨
+   albert 사전학습/tunning 결과
+    - test set을 한개 병원에 대해 고정하고 나머지 병원으로 훈련시 95, 97%, 99.xx% (5개 병원에 대해 테스트)
+    
+2. 동물 수가 관련
+  각 용어를 vectorization(bert as a service, embedding as a service), using google bert multi cased model
+  K means clustering 진행중 (약 1000개에 대해 테스트 완료 및 전체 test 진행중)
+  
+  
+  
+      
+    

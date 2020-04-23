@@ -45,5 +45,8 @@
    여러번 군집화를 하여 가장 빈번히 등장하는 군집에 할당하는 majority voting 방법 사용
    https://ratsgo.github.io/machine%20learning/2017/04/19/KC/
    
+   군집화 수행 후 각 군집당 mean과 variance를 구하고 test data로 테스트 시 1, cosine similarity 2, l2 distance, 3 calculate prob(GA)
+   군집에 맞게 텍스트 데이터 모아줄 필요 있다.
+   
    
 

@@ -41,6 +41,9 @@
         Error: no centroid defined for empty cluster.
         Try setting argument 'avoid_empty_clusters' to True
    특정 클러스터에 하나도 포함이 안되서 에러 발생하는 것으로 보임, flag setting 후 미발생
+   K means clustering의 경우 data 분포 및 밀도 및 군집의 크기가 다를 경우(클러스터당 개수) 잘 동작하지 않을 수 있다고 
+   여러번 군집화를 하여 가장 빈번히 등장하는 군집에 할당하는 majority voting 방법 사용
+   https://ratsgo.github.io/machine%20learning/2017/04/19/KC/
    
    
 

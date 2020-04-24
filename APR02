@@ -53,5 +53,19 @@
    매 테스트마다 군집의 label이 다르고 갯수도 다르다.
    repeats를 늘리면 결과가 조금 더 안정적으로 된다.
    
+0424
+1. clustering 관련 - K means를 세번 이용하여 클러스터링 하고 2개 이상 결과 일치할 때 그룹에 포함하자. 다양한 시도
+                   - embedding as a vector에서 customized pretrained model을 사용하기 위해 코드 분석, 
+                     결국 hub.module을 사용함 확인, 
+                     hub.module vs hub.load (각각 tf1, tf2, tfhub_module.pb vs saved_model.pb) 그런데 2개 다 있어어 로딩되고 
+                     없으면 에러 발생(tf1 tf2 모두)
+                     signature default로 생성시 굳이 embedding as a vector를 안써도 쉽게 벡터화 할수 있을 것 같은데 signature 공부 필요
+                     
+2. pet(280000) + wick 한국어 (120000) 더해서 사전학습 진행(over fit 완화 목적)
+   한국어 위키가 xml format이어서 한국어 위키용 파이썬 파일 찾아서 text를 뽑아냄.
+
+3. 텐서플로우 공부.
+   variable scope, signature, serving 등 확인필요
+   
    
 

@@ -8,7 +8,7 @@ Contents
 
 * * *
 
-###진단코드 분류
+### 진단코드 분류
 1. setup
 * 총 class 50개(진단코드당 최소 50개 이상)
 * labeld data 약 16000개 중 약 8000개, 약 &:2:1의 비율로 train, dev, test set
@@ -28,7 +28,7 @@ Contents
   
 * * *
   
-###처치 용어 클러스터링
+### 처치 용어 클러스터링
 
 1. setup
 * 총 12만 개의 data( 중복 제외시 6만개의 처치 관련 용어)
@@ -39,5 +39,5 @@ Contents
 
 * * *
 
-###Bert / Albert 소개
+### Bert / Albert 소개
 

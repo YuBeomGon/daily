@@ -40,4 +40,9 @@ Contents
 * * *
 
 ### Bert / Albert 소개
+*https://nlpinkorean.github.io/illustrated-bert/
+
+
+<img src="다운로드/bert1.png" width="450px" height="300px" title="Bert" alt="RubberDuck"></img><br/>
+
 

@@ -6,3 +6,23 @@
    hub.module로 bert를 생성하면 학습이 잘 안된다. (google 제공 사전학습을 이용하면 60%대, fine tunning from scratch를 하면 약 20~30%대
    bert model training이 잘 안되고 classifier만 training 되는 느낌.
    
+2. pet data 혈액관련 데이터 전처리 중
+   기존 label data에 혈액 데이터를 추가해서 새로 data frame을 만들어야 한다.
+   
+3. 사전학습 in image(with no label)
+
+4. 쿠버네티스 + cubeflow
+   - seminar 참석
+   - git download, 예제 실행
+   - cubeflow 접속 위해 dns 등록 필요
+   - web 접속위해 local registration server ip 검색 후 web search(eg google), local registration(hub) server ip를 my pc
+     dns configuration을 해줘야 한다.
+     
+
+0507
+todo
+1. cubeflow 접속, 파이프라인 추가, training(dns configure)
+   image compile, push
+   환경(infra) 분석
+2. image 사전학습(with no label) review
+3. pet data 2개 엑셀파일 합쳐서 새로 csv file 만들기

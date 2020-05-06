@@ -1,0 +1,8 @@
+0506
+1. Bert/Albert 정리
+   Bert/albert 모두 Pet 분류 관련 accuracy가 잘 나온다.
+   google hub에서 사전학습된 모듈을 이용후 fine tunning하면 약 80%대 후반(bert 기준), fine tunning만 했을 시 90% 후반
+   modeling.BertModel로 bert model을 생성하면(ckpt에서 weight loading) 잘 나오나
+   hub.module로 bert를 생성하면 학습이 잘 안된다. (google 제공 사전학습을 이용하면 60%대, fine tunning from scratch를 하면 약 20~30%대
+   bert model training이 잘 안되고 classifier만 training 되는 느낌.
+   

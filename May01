@@ -26,3 +26,8 @@ todo
    환경(infra) 분석
 2. image 사전학습(with no label) review
 3. pet data 2개 엑셀파일 합쳐서 새로 csv file 만들기
+
+1. kubeflow 관련 web 접속, (윈도우 dns server 변경 및 캐시 해재(시크릿창 열기), 웹에서 파일 업로드 차단, 해제 신청
+2. contrative loss 관련 리뷰(사전학습 with unlabeled image)
+
+

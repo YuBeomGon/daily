@@ -34,7 +34,7 @@
       - 혈액화확
       - data reformat(both), preprocessing(scaling), testing(혈액학)
       - 3개를 합하는 것은 test sample이 줄어들 여지가 있어서 일단 단일 항목으로 테스트 진행 예정
-      - 30개 class (약 5000개 데이터), feature(37개)
+      - 30개 class (약 5000개 데이터), feature(37개), 27%
    - clustering 안하기로..
    
  2. Image

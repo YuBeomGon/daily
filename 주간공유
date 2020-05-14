@@ -38,12 +38,13 @@
    - clustering 안하기로..
    
  2. Image
-   - image : 2차원, continuous, spatial
+   - image : 3차원, continuous, spatial
    - Attention
       - residual attention network
-      - squeeze and exiation network
+      - squeeze and exiation network(channel간)
+      - non local network(spatial간)
    - 사전학습(unlabeled data), MOCO, contrastive loss
-   - 3d 동영상
+   
    
  3. gpu memory
    - gradient checkpointing

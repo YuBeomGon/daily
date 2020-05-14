@@ -24,5 +24,30 @@
   
   
   
-      
-    
+0514
+
+1. 2차 우리엔 미팅
+   - 새로운 데이터로 테스트
+   - multi label 
+   - 혈액 관련 데이터 + Text(기존)
+      - 혈액학
+      - 혈액화확
+      - data reformat(both), preprocessing(scaling), testing(혈액학)
+      - 3개를 합하는 것은 test sample이 줄어들 여지가 있어서 일단 단일 항목으로 테스트 진행 예정
+      - 30개 class (약 5000개 데이터), feature(37개)
+   - clustering 안하기로..
+   
+ 2. Image
+   - image : 2차원, continuous, spatial
+   - Attention
+      - residual attention network
+      - squeeze and exiation network
+   - 사전학습(unlabeled data), MOCO, contrastive loss
+   - 3d 동영상
+   
+ 3. gpu memory
+   - gradient checkpointing
+   - gradient accumulation
+   - Adam to other algorithm
+   - compile optimization(XLA)
+   

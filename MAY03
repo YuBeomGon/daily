@@ -3,4 +3,5 @@ to do
 1. relation nn, attention in image(residual attention nn, squeeze and exiation nn, non local nn) review.
 2. back propagation 정리(fcn, cnn)
 3. multi label classfication 
+4. 선형대수, eigen dicomposition, svd
 

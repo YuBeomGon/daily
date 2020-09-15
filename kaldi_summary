@@ -1,0 +1,79 @@
+19/12/06
+1. 진행
+  Kaldi를 이용한 음성인식 sw 개발
+    음향모델 - AI hub 1000시간의 data로 Machine learning 완료 후 Deep learning 진행 중
+    언어모델 - 특정 도메인에 대한 언어모델로 테스트시 90% 이상의 확률로 인식됨을 확인, 숫자의 경우 음향 모델 개선후 테스트 필요
+    언어모델 Rescoring 개발 진행 중, 우선순위로 홀딩
+  딥러닝을 이용한 EndtoEnd 음성인식 연구
+    Facebook wav2letter++ framework 파악 진행 중
+2.
+  머신 러닝의 경우 Wer이 크게 중요치 않고 많은 샘플로 테스트를 하지 않아도 된다.
+3.plans
+  칼디를 이용한 음성인식 SW개발
+    음성인식 테스트를 하기 위한 audio와 transcript를 자동화해서 생성하는 sw 개발
+    칼디 Deep learning 관련 스터디
+    한글 음성인식 wav2letter++로 전환
+    
+19/12/12   
+1. 진행
+  Kaldi를 이용한 음성인식 sw 개발
+    음향모델 - AI hub 1000시간의 data로 Machine learning 완료 후 Deep learning 일차로 완료, wer 약 12%, DNN Layer를 추가한 후 재 training 진행중
+    Google Cloud TexttoSpeech API를 이용, 의료용어에 대한 Voice를 생성후 ASR 테스트 진행함, wer 약 13% 정도 확인
+  딥러닝을 이용한 EndtoEnd 음성인식 연구
+    Facebook wav2letter++ framework를 비롯 EndtoEnd model toolkit search, openseqtoseq, ESPNet 등
+    docker를 이용 wav2letter 설치 진행 중
+    code 정리 및 github update
+3. 
+Plan To Do
+  칼디를 이용한 음성인식 SW개발
+    음성인식 확률 높이기
+    Noise 추가 후 테스트
+    decoding된 text에 대한 후처리
+    칼디 Deep learning 관련 스터디
+  한글 음성인식 wav2letter++로 전환
+    docker 설치 및 환경 구축
+    
+20/01/02
+1.
+Kaldi를 이용한 음성인식 sw 개발
+  음향모델 - AI hub 1000시간의 data로 Machine learning 완료 후 Deep learning 일차로 완료, wer 약 12%, DNN Layer를 추가한 후 재 training 완료 wer 약 10%
+  Google Cloud TexttoSpeech API를 이용, 의료용어에 대한 Voice를 생성후 ASR 테스트 진행함, wer 약 5% 정도 확인
+  Test code code clean up
+  kaldi 관련 개발은 stop, EndtoEnd로 전환
+딥러닝을 이용한 EndtoEnd 음성인식 연구
+  Facebook wav2letter++ framework를 비롯 EndtoEnd model toolkit search, openseqtoseq, ESPNet, espresso, NeMo, Lingvo, Mozilla/DeepSpeech 등 다양한 음성인식 toolkit 설치 및 training 시도
+  DeepSpeech framework을 이용 server/client단  테스트 중
+
+3.
+  칼디를 이용한 음성인식 SW개발
+    hold
+  EndtoEnd 음성인식 SW 개발
+    Mozilla DeepSpeech에서 제공하는 pretrained model과 server/client단 코드를 사용하여 영어 음성인식 SW 테스트 완료
+    
+20/01/09
+1.
+딥러닝을 이용한 EndtoEnd 음성인식 연구
+  Facebook wav2letter++ framework를 비롯 EndtoEnd model toolkit search, openseqtoseq, ESPNet, espresso, NeMo, Lingvo, Mozilla/DeepSpeech 등 다양한 음성인식 toolkit 설치 및 training 시도
+  DeepSpeech framework을 이용 server/client단  테스트 진행
+  영어에 대해 lm, graph, AM training 진행 후 inference까지 테스트 완료, 약 1000시간의 data에 대해 약 이틀 정도 training 시간 소요됨
+  한글 training 준비 중
+    alphabet을 조합형 한글(가-힣)로 놓고 zeroth data에 대해 전처리 완료
+    AM training 시작
+    LM, graph 대기
+  영어와 다르게 음절단위로 alphbet을 줄 경우 각 alphabet별 training data가 별로 없기 때문에 over fit등에 빠질 수 있음, 따라서 d번은 try and test 하는 정도이고 실제로는 발음, 또는 자모 등으로 한글을 나누는 작업을 해줘야 할 것으로 보임
+  Bazel을 이용한 Tensorflow기반의 DeepSpeech 개발 환경 구축 시도 중
+    trie graph의 경우 download받은 파일로 생성한 trie로 inference 시도 시 Error: Trie file version mismatch (4 instead of expected 5). Update your trie file 발생함, Bazel을 이용하여 trie 생성용 실행파일 작성 필요.
+
+20/01/23
+딥러닝을 이용한 EndtoEnd 음성인식 연구
+  크게 3가지 방법으로 한국어 음성 인식에 대해 진행(for zeroth/aihub)
+    음절 단위 : [가-힣]까지 약 2000개의 한국어 음절에 대한 training - 기능 테스트 목적으로 기능 동작확인 후 종료
+    음절 단위 + 로마자 변환 : 위 약 2000개의 음절을 로마자로 변환하고(a-z) a-z까지 26개 단어에 대한 학습 진행
+                                              AI hub data를 토대로 음절 사전을 만들고 그것을 자모로 변환후(library 사용) 각각의 자모에 대한 로마자 변환 mapping table을 만들어서 Data set 준비
+                                              sample data로 테스트 후 전체 data에 대해 training format(csv file)을 만드는 중 예외 케이스가 발생하여 홀딩함
+                                              장점 : 영어에 대한 검증이 완료되었기에 어느 정도 성능 보장 가능
+                                              단점 : 한글 /로마자 mapping이 규칙 기반이고 예외 케이스 존재 가능, 또한 다수 대 다수 매핑시 한글 변환 문제.. 등
+    음절 단위 + 자모 분리  : ㄱ-ㅎ, ㅏ-ㅣ, ㄱ-ㅎ, 겹받침 등 초중종에 따른 자모 분리를 하고 각 자모에 대한 training을 진행
+                                            현재 training을 진행중이며, 성능이 현재는 미비한 상황
+                                            특정 겹받침의 경우(ㄾ ㅀ 등 data sample이 작아서 overfit 될 수 있고 training에 영향을 미칠 수 있어 고민이 필요)
+  파이썬 및 텐터플로우 스터디 및 DeepSpeech framework code 리뷰

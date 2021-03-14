@@ -1,0 +1,15 @@
+3/8~3/15
+1. object detection관련 기존 과제 backup
+(Papsmier, HPV, 동결절편)
+2. Linux setting
+
+3/15
+to do 
+1. Object detection 관련 논문 fast review
+   ssd, faster rcnn, mask rcnn, 
+2. DETR fast review
+3. papsmier 및 DETR 관련 코드 리뷰 및 mixup
+4. data 관련 확인, 
+   train/test split시 사람별로 나눌 필요 존재?
+   모든 object에 bounding box 할 필요 존재?
+   data 확인해 보자.

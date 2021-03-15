@@ -45,5 +45,14 @@ done
       - Bg, high, low(normal in bg)
       - annotate all normal case? -> too much normal case, hard to annotate?
       - annotate several normal case, using loss ft(undersample bg case, by sorting)
+      
+   code review - bbox and image print 
    
+3/16
+to do
+1. deformable convolution/attention review
+   자연어처리 pretraining - vision fine tuning
+2. data 관련 확인(병리사님과)
+3. DETR 돌려보기, 보규 코드 리뷰
+
    

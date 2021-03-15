@@ -39,3 +39,10 @@ done
    not bounding box but point in case of small object
    hausdorf loss
    
+   Train/Test set split - random split, No Personal information, but still need to check how to make test data
+   regarding Normal class bounding box
+      - Bg, high, low(normal in bg)
+      - annotate all normal case? -> too much normal case, hard to annotate?
+      - annotate several normal case, using loss ft(undersample bg case, by sorting)
+   
+   

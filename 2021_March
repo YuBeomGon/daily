@@ -19,3 +19,7 @@ done
 1. SSD - hard negative mining - for solving class imbalancing,
          check background bounding box with small loss, (3 vs 1, background vs non background)
          sorting후 loss가 작은 것 3배 sampling해서 학습시 사용한다. 
+         
+       - 작은 object 잘 못찾는다, 처음 feature를 뽑는 layer에서 아직 abstraction이 충분히 잘 이뤄지지 않음 -> retina net
+       - SSD에서는 augmentation으로 극복을 한다.
+       - VGG16대신 가벼운 network를 사용시 시간을 더 줄일 수 있다.

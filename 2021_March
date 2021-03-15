@@ -38,6 +38,7 @@ done
    Locating Object without Bounding Boxes
    not bounding box but point in case of small object
    hausdorf loss
+   what is a deformable convolution??
    
    Train/Test set split - random split, No Personal information, but still need to check how to make test data
    regarding Normal class bounding box

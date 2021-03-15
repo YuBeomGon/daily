@@ -23,3 +23,11 @@ done
        - 작은 object 잘 못찾는다, 처음 feature를 뽑는 layer에서 아직 abstraction이 충분히 잘 이뤄지지 않음 -> retina net
        - SSD에서는 augmentation으로 극복을 한다.
        - VGG16대신 가벼운 network를 사용시 시간을 더 줄일 수 있다.
+       
+2. DETR
+   set problem, No heuristic like anchor box, NMS.
+   Backbone resnet 50, 101, positional embeding 
+   Transformer, two FFN for class and bbox
+   two loss for matching and backpropagation
+   
+   Deformabel DETR

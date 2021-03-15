@@ -29,5 +29,6 @@ done
    Backbone resnet 50, 101, positional embeding 
    Transformer, two FFN for class and bbox
    two loss for matching and backpropagation
+   for class imbalance, background class, loss*1/10
    
    Deformabel DETR

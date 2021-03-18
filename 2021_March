@@ -55,4 +55,9 @@ to do
 2. data 관련 확인(병리사님과)
 3. DETR 돌려보기, 보규 코드 리뷰
 
-   
+3/19
+to do 
+1. deformable convolution/attention deep review
+2. image 관련 전처리 라이브러리 확인
+3. 준환님 코드 리뷰
+4. detr training 시작 가능하면

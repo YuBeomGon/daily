@@ -74,3 +74,16 @@ done
 1. cs231n 3강, 4강 수강
    optimization(svm(hinge) loss, cross entropy)
    back propagation
+   
+2. detr error debugging 관련
+   jupyter에서 torch 등 library 설치한 것이 cuda, cudnn등과 호환이 안된 듯
+   conda 가상환경에서 설치할 것, 그 후에 jupyter 연동할 것
+3 detr loss ft
+t1 = torch.tensor([[0.1928, 0.1385, 0.0804, 0.2328, 0.1787, 0.1768],
+        [0.1031, 0.0815, 0.0740, 0.1803, 0.4449, 0.1163],
+        [0.1860, 0.1658, 0.0975, 0.2000, 0.1930, 0.1577],
+        [0.1302, 0.0783, 0.0818, 0.2376, 0.3783, 0.0938]])
+t2 = torch.tensor([2], dtype=torch.int8)   
+t1[:,t2]
+tensors used as indices must be long, byte or bool tensors
+label의 data type을 int8에서 uint8로 변경할 것, unsigned로

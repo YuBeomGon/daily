@@ -61,3 +61,16 @@ to do
 2. image 관련 전처리 라이브러리 확인
 3. 준환님 코드 리뷰
 4. detr training 시작 가능하면
+
+3/22
+to do
+1. pip vs conda vs venv 등 설정 경로 확인하기
+   jupyter 설정, 어떤 python을 사용하는지 등등..
+2. detr kuda error 디버깅
+3. pap smier article reading
+4. cs231n 강의 수강
+
+done
+1. cs231n 3강, 4강 수강
+   optimization(svm(hinge) loss, cross entropy)
+   back propagation

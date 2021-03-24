@@ -98,3 +98,11 @@ label의 data type을 int8에서 uint8로 변경할 것, unsigned로
   weight initialization
   batch normalization
   training시에 mean과 var를 구하고 test시에 이것을 써서 zero mean unit variance normalization을 해준다.
+  
+3/24
+to do
+1. 기존 3 class object detecion training
+   code 분석
+2. New algorithm 이해
+
+

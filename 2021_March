@@ -87,3 +87,14 @@ t2 = torch.tensor([2], dtype=torch.int8)
 t1[:,t2]
 tensors used as indices must be long, byte or bool tensors
 label의 data type을 int8에서 uint8로 변경할 것, unsigned로
+
+3/23
+1. cs231n 6강
+   data preprocessing
+   zero mean, unit variance -> relu is good just for first layer
+   batch 단위로 mean, 또는 channel 단위로 (RGB) mean을 구한다. 
+   test set에서도 동일..
+  activation
+  weight initialization
+  batch normalization
+  training시에 mean과 var를 구하고 test시에 이것을 써서 zero mean unit variance normalization을 해준다.

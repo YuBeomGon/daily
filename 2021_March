@@ -121,3 +121,12 @@ done
    
 7. num_parallel_calls=tf.data.experimental.AUTOTUNE -> cpu data loading multi threading
 
+3/25
+to do
+1. unet 기반 segmentation fine tuning
+   image 관련 전처리 등에 익숙해지자.
+   
+2. unet 관련, segmentation 관련 강의 들어보자.
+
+   
+

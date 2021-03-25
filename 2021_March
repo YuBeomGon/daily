@@ -110,4 +110,11 @@ done
 2. TensorRT, tensorflow example, dataset api 간단 사용
 3. pap smear dataset, kaggle code 리뷰
 4. 딥러닝을 이용한 논문 리뷰
+5. tf.function decorator 1에서 2로 넘어가면서 즉시 실행 모드 지원
+   python 함수를 tensorflow graph 바꿔주고, backpropagation가능
+   
+6. Image pre processing시 batch 단위 mean subtract 또는 channel 단위(RGB)로 해서 값들을 0 근처로 옮겨준다.
+   sigmoid의 단점 이루 보완 가능(첫번째 layer만), 
+   Loss를 자주 찍어 variation을 자주확인해야 한다. sharp variation means wrong training
+   sharp minima can be removed by small data pertubation, we need to find the flat minima
 

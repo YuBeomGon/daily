@@ -117,6 +117,7 @@ done
    sigmoid의 단점 이루 보완 가능(첫번째 layer만), 
    Loss를 자주 찍어 variation을 자주확인해야 한다. sharp variation means wrong training
    sharp minima can be removed by small data pertubation, we need to find the flat minima
+   regularization -> not overfit to training data -> give randomness duing training, batch norm, drop out, remove it during test time
    
 7. num_parallel_calls=tf.data.experimental.AUTOTUNE -> cpu data loading multi threading
 

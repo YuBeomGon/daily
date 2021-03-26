@@ -127,6 +127,13 @@ to do
    image 관련 전처리 등에 익숙해지자.
    
 2. unet 관련, segmentation 관련 강의 들어보자.
+done 
+1. deeplap v3 세미나 리뷰 
+   feature pyramid, encoder /decoder, unet, atrous convolution(dilated con), depthwise con, 1*1 conv
+2. Unet backbone 관련 확인 중
+   계층적 샘플링(Stratified Sampling), random split시 특정 class가 몰리는 현상을 방지하기 위해 유용할 듯..
+   segmentation 관련 유용
+   https://tech.socarcorp.kr/data/2020/02/13/car-damage-segmentation-model.html
 
    
 

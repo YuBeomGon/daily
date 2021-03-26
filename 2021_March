@@ -137,6 +137,9 @@ done
 3. Unet tensorflow 참고 코드 
    https://medium.com/analytics-vidhya/humans-image-segmentation-with-unet-using-tensorflow-keras-fd6cb43b06e5
    https://towardsdatascience.com/nucleus-segmentation-using-u-net-eceb14a9ced4
+   
+4. fastai관련 library update또는 method 이름 변경 필요
+   Imagelist, get_transform(aug_transform) 등
 
    
 

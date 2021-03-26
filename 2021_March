@@ -134,6 +134,8 @@ done
    계층적 샘플링(Stratified Sampling), random split시 특정 class가 몰리는 현상을 방지하기 위해 유용할 듯..
    segmentation 관련 유용
    https://tech.socarcorp.kr/data/2020/02/13/car-damage-segmentation-model.html
+3. Unet tensorflow 참고 코드 
+   https://medium.com/analytics-vidhya/humans-image-segmentation-with-unet-using-tensorflow-keras-fd6cb43b06e5
 
    
 

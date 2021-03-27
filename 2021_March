@@ -141,5 +141,9 @@ done
 4. fastai관련 library update또는 method 이름 변경 필요
    Imagelist, get_transform(aug_transform) 등
 
+3/26
+cuda와 pytorch version mismatch로 인한 gpu loading error 관련 아래 링크 참조
+conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch.
+
    
 

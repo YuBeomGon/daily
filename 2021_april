@@ -12,7 +12,15 @@ done
    https://ddiri01.tistory.com/319
    screen -S, -ls, -R, ctrl+a 후에 명령어 입력, 
    ctrl+a, d  (detach) 
-   screen -S [sessionID] -X quit 또는 접속 후 ctrl+d
+   screen -S [sessionID] -X quit 또는 attatch 후 ctrl+d 또는 exit
+   세션(screen)내에 terminal 추가
+
+ctrl+a, c
+세션 아래부분에 0 bash  [1 bash] 이렇게 표시된다.
+2개의 bash창 중에 뒤의것이 선택되었다는것 
+창이동하기 : ctrl+a, 0 : 0번째 창으로이동 
+ctrl+a,1 : 1번째 창으로 이동. 
+창종료하기 : terminal 종료하듯이 exit해주면됨
    
    
    

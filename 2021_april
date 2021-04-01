@@ -1,0 +1,16 @@
+4/1
+to do 
+1. open data로 ssd detection training, validation(tensorflow)
+2. open data classify using tensorflow
+3. tensorflow 기초 다지기
+4. detr data bbox 확인
+
+done
+1. screen 명령어 확인
+   https://ddiri01.tistory.com/319
+   screen -S, -ls, -R, ctrl+a 후에 명령어 입력, 
+   ctrl+a, d  (detach) 
+   screen -S [sessionID] -X quit 또는 접속 후 ctrl+d
+   
+   
+   

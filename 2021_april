@@ -1,6 +1,8 @@
 4/1
 to do 
 1. open data로 ssd detection training, validation(tensorflow)
+   tfrecord를 생성 후 학습할때 augmentation어떻게 들어가는지, tensorflow object api 확인
+   object detection api를 안 쓸수는 없는지 확인
 2. open data classify using tensorflow
 3. tensorflow 기초 다지기
 4. detr data bbox 확인

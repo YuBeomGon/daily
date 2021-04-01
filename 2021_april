@@ -22,5 +22,15 @@ ctrl+a, c
 ctrl+a,1 : 1번째 창으로 이동. 
 창종료하기 : terminal 종료하듯이 exit해주면됨
    
-   
-   
+4/2
+to do 
+1. object detection 논문 deep reivew (fast review, ssd)
+2. domain data 관련 이해, area 등 추가 확인
+3. 
+
+done
+
+further
+1. object detection 논문 전체 리뷰
+2. image augmentation 관련
+3. pathology, cytology, papsmear 논문 및 augmentation관련 리뷰

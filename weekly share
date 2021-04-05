@@ -1,0 +1,16 @@
+1. open data(sipakmed_fci_pap_smear)를 토대로 bbox mask 생성, mobile net based SSD training
+   Loss 2.0 정도 수렴, 2 class ( Cytoplasm, necleus), object detection을 해서 어느 정도 bbox를 잡아주는지 체크 용도
+   inference 확인 필요
+2. detr training, but loss가 잘 수렴 안됨
+   hyperparameter tuning
+   2 Class 부터 (현재는 five class, 후처리로 3 class로 변환할 계획이었음)
+   resize시 object의 크기가 작아질 수 있다. -> resize 최소화
+   (1600*1600, normal size : 약 70, abnormal 약 100)
+   random crop시 object가 하나도 포함 안되는 경우 자주 발생 -> lambda 함수 이용해 보자.
+3. object detection 관련  리뷰
+   RCNN to Faster RCNN
+   YOLO, SSD, FPN, retinanet등
+   
+4. to do 
+   tensorflow 1.15 기반 SSD or retinanet 등, 2 class로 training햅자.
+   tensorflow lite로 변환시 문제 발생한다고 함 (tf 2.0 이상은)

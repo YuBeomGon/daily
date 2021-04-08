@@ -44,4 +44,23 @@ https://yeomko.tistory.com/category/%EA%B0%88%EC%95%84%EB%A8%B9%EB%8A%94%20Objec
 Deepsystems review
 https://docs.google.com/presentation/d/1aeRvtKG21KHdD5lg6Hgyhx5rPq_ZOsGjG5rJ1HP7BbA/pub?start=false&loop=false&delayms=3000&slide=id.p
 
+4/7
+기존 crop시 bbox 잘못 잡는 에러 햬결
+세로로 세워져 있는 image에 한해 transpose및 flip을 시켜준다.
+why flip?? 어떤 history가 있을까?
+혹시 세로로 세워져 있는 image중 flip이 안되어 있는 것도 있지 않을까??
 
+4/8
+1. 준환님 based classification code를 detection code로 customizing 관련
+   tf.hub example code 확인
+1. tensorflow 1.14
+   2. 1 class(abnormal) object detection training 시작
+   3. 2 class의 경우 IOU 0.5 기준 precision 약 0.6 정도
+      아마도 전체 slide에 대한 sensitivity와 specificity를 말한 듯
+4. tensorflow 2.4
+   동일하게 2 class에 대해 detection해서 loss약 2 정도 나왔으나 evaluation시 끝 부분에서 error 발생함.
+     File "/home/beomgon/anaconda3/envs/tfssd/lib/python3.8/site-packages/numpy/core/function_base.py", line 113, in linspace
+       num = operator.index(num)
+   TypeError: 'numpy.float64' object cannot be interpreted as an integer
+   
+   

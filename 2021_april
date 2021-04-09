@@ -63,4 +63,11 @@ why flip?? 어떤 history가 있을까?
        num = operator.index(num)
    TypeError: 'numpy.float64' object cannot be interpreted as an integer
    
+4/9
+1. tensorflow hub object detection관련 확인, 어려울 듯
+   keras.Layer도 마찬가지
+   kaggle에 yolov3 버전으로 하자.
    
+2. papsmear image는 default가 가로가 맞다.
+   실제 bbox label과 width, height가 그렇게 되어 있다. 
+   일부 이미지가 세로로 세워져 있다면 체크해서 flip 및 transpose를 해 줘야 한다.

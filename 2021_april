@@ -71,3 +71,7 @@ why flip?? 어떤 history가 있을까?
 2. papsmear image는 default가 가로가 맞다.
    실제 bbox label과 width, height가 그렇게 되어 있다. 
    일부 이미지가 세로로 세워져 있다면 체크해서 flip 및 transpose를 해 줘야 한다.
+   
+4/14
+object detection bbox
+https://leimao.github.io/blog/Bounding-Box-Encoding-Decoding/

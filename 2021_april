@@ -75,3 +75,11 @@ why flip?? 어떤 history가 있을까?
 4/14
 object detection bbox
 https://leimao.github.io/blog/Bounding-Box-Encoding-Decoding/
+
+4/15
+to do
+1. ssd paper reivew
+2. ssd에서 center x, y, width, height가 bbox parameter로 들어간다 (by 논문, 실제 코드 구현 확인해 보자.)
+3. bbox regression 이해
+4. swin transformer
+5. mobile net

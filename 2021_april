@@ -76,6 +76,25 @@ why flip?? 어떤 history가 있을까?
 object detection bbox
 https://leimao.github.io/blog/Bounding-Box-Encoding-Decoding/
 
+albumentation bug report, min_visibility=1.0일때 bo bounding box return 
+약 30000번 돌려서 evaluation한 결과입니다.
+batch size를 32로 1/4로 줄여서 80000번은 돌려야
+예전과 비슷할 것 같습니다.
+one class(abnormal) detection입니다.
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.480
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.817
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.526
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.468
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.615
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.163
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.491
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.641
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.637
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.688
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
+
+
 4/15
 to do
 1. ssd paper reivew

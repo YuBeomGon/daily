@@ -115,3 +115,9 @@ done
 
 4. tensorflow object detection api training for custom dataset
 https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#evaluating-the-model-optional
+
+5. tensorflow bounding box format 관련
+   model에 따라 dataset에 따라 box의 format이 다르다. ex(xmin, ymin, xmax, ymax or centerx, centery, widht, height ...)
+   tensorflow object detection api에서는
+   xmin, ymin, xmax, ymax를 각각 x/widht, y/height로 normalize해서 통일화된 format으로 보내주고,   
+   내부적으로 model에 따라 변경해주는 부분이 각 모델 코드에 있을 것 같다.

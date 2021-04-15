@@ -113,3 +113,5 @@ done
    web에서 tf.saved_file.load('path')에서 ~ 인식 에러
    모델 로드 시 signiture까지 넣어줘야 model call이 됨.
 
+4. tensorflow object detection api training for custom dataset
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#evaluating-the-model-optional

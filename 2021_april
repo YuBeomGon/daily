@@ -102,3 +102,9 @@ to do
 3. bbox regression 이해
 4. swin transformer
 5. mobile net
+
+done
+1. mobile net
+   vgg 기반 backbon에서 depth wise convolution + point conv를 도입해서 연산량을 감소시킨 모델
+2. swin transformer 리뷰
+   cnn 과 유사한 architecture를 갖도록 design

@@ -108,3 +108,8 @@ done
    vgg 기반 backbon에서 depth wise convolution + point conv를 도입해서 연산량을 감소시킨 모델
 2. swin transformer 리뷰
    cnn 과 유사한 architecture를 갖도록 design
+3. 약 10,0000 step training, 결과가 더 좋아짐을 확인함.
+   pb file export 후, tf lite 변환 후, inferece 실행했으나 모든 결과가 0으로 나옴
+   web에서 tf.saved_file.load('path')에서 ~ 인식 에러
+   모델 로드 시 signiture까지 넣어줘야 model call이 됨.
+

@@ -121,3 +121,14 @@ https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/traini
    tensorflow object detection api에서는
    xmin, ymin, xmax, ymax를 각각 x/widht, y/height로 normalize해서 통일화된 format으로 보내주고,   
    내부적으로 model에 따라 변경해주는 부분이 각 모델 코드에 있을 것 같다.
+
+4/20
+done 
+1. retinanet paper review
+2. softmax and log likehood loss gradient backpropagation 스터디
+
+
+do
+1. tensorflow object detection api code study
+   loss, input data loader, model
+2. export graph, inference시 코드 flow

@@ -132,3 +132,4 @@ do
 1. tensorflow object detection api code study
    loss, input data loader, model
 2. export graph, inference시 코드 flow
+   mobile serving 확인

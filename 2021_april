@@ -126,7 +126,10 @@ https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/traini
 done 
 1. retinanet paper review
 2. softmax and log likehood loss gradient backpropagation 스터디
-
+3. tensorflow object detection api code review
+   model, loss, export for inference, mobile inference check
+   mobile inference시 내부적으로 preprocess함수가 불린다.
+   그냥 inference시 default로 input tensor가 unit로 되어 있다.
 
 do
 1. tensorflow object detection api code study

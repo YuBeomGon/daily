@@ -159,3 +159,9 @@ do
    anchor box, FPN, loss, 등 코드 확인해 보자.
 5. model export, tflite시 code flow check, preporcess를 하는지 안하는지 확인 필요.
 
+4/21
+do
+1. efficient net paper reivew, fine tuning using tensorflow object detection api
+2. 다양한 aspect ratio와 scale을 줘서 fine tuning해보자. loss ft에서 regression의 loss를 줄일 것..
+3. pytorch retinanet code review
+

@@ -144,6 +144,10 @@ done
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.502
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.663
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.644
+ 
+5. mobile과 pc에서 tflite model을 이용한 inference 결과가 서로 다름
+   Albumentation resize option, inter_linear로 app의 bi lenear와 동일함.
+   
 
 do
 1. tensorflow object detection api code study

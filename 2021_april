@@ -164,4 +164,19 @@ do
 1. efficient net paper reivew, fine tuning using tensorflow object detection api
 2. 다양한 aspect ratio와 scale을 줘서 fine tuning해보자. loss ft에서 regression의 loss를 줄일 것..
 3. pytorch retinanet code review
+   code에서 bbox와 classification loss, iou 관계 등 확인할 것..
 
+done
+1. ssd mobilenet + fpn 640x640, 100,000 step test result. (batch size, 12
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.516
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.838
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.595
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.313
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.525
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.610
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.169
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.514
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.664
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.507
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.671
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.661

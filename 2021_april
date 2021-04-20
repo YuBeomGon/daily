@@ -133,3 +133,8 @@ do
    loss, input data loader, model
 2. export graph, inference시 코드 flow
    mobile serving 확인
+3. efficient det paper reivew
+4. pytorch retinanet code review
+   anchor box, FPN, loss, 등 코드 확인해 보자.
+5. model export, tflite시 code flow check, preporcess를 하는지 안하는지 확인 필요.
+

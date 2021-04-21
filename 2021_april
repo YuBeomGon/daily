@@ -195,3 +195,4 @@ done
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.695
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
 
+2. papsmear 이전 버전, PC와 mobile이 서로 달랐다고 함..

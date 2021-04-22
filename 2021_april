@@ -223,10 +223,17 @@ done
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.699
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
  
- loss 비율 조정은 성능에 크게 영향이 없어 보인다.
-
+loss 비율 조정은 성능에 크게 영향이 없어 보인다.
 
 4. train1.sh training, 3번 이어서 10,0000 step test
    train.sh training1 0.2 : 1의 비율로 다르게 줘서 학습시킴.
    
 4. papsmear 이전 버전, PC와 mobile이 서로 달랐다고 함..
+
+
+0421
+1. detection model 바꿔서 테스트 해 보자.
+2. 전체 test set에 대해 돌려서 confusion matrix 만들어 볼 것.
+3. threshold 비교하며, 적절한 threshold 찾기
+4. NMS 구현.
+   

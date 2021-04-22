@@ -236,4 +236,5 @@ loss 비율 조정은 성능에 크게 영향이 없어 보인다.
 2. 전체 test set에 대해 돌려서 confusion matrix 만들어 볼 것.
 3. threshold 비교하며, 적절한 threshold 찾기
 4. NMS 구현.
+5. pytorch retinanet, training 및 code 공부, anchor box, IOU, loss, NMS 등 확인해 보자.
    

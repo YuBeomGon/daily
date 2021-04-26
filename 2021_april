@@ -290,3 +290,28 @@ efficientdet640 20000, batch_size 6
     
     0.5 : p 0.97 r 0.48, f1 0.64, num_pred 1042
 
+0.25
+duration  763.7069249153137
+7950 14054 10740
+precision : 0.7402234636871509
+recall : 0.5656752525971254
+f1 score 0.6412841816568525
+
+0.2
+duration  763.1596565246582
+8214 14054 11429
+precision : 0.7186980488231691
+recall : 0.5844599402305394
+f1 score 0.6446650708315348
+228
+3431
+0.06645292917516758
+
+0.15 + 최소 한개 포함
+
+SCL, 5월달 data 받을 예정, 4개월 내에 AI model 개발(9월 안), 95%, 5분 , wsi image
+성모병원 컨소시엄, 4월 말 미팅, 2년 계획
+tensorflow object detection api 를 이용 tuning, + search위주로, code 리뷰 (pytorch 위주로)
+
+
+

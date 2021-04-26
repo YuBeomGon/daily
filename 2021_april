@@ -274,5 +274,9 @@ efficientdet640 20000, batch_size 6
  2. retinanet code review
  3. threshold 바꿔가면서 전체 test set에 대해 test?
     or 각 pass fail별로 특징 확인
+    
+ 1. NMS 
+ https://github.com/BichenWuUCB/squeezeDet/blob/master/src/utils/util.py
+ https://dyndy.tistory.com/275
  
 

@@ -254,7 +254,7 @@ test resutl (ssd fpn mobilenet 320, 130000 step)
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.717
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
 
-0424
+0423
 efficientdet640 20000, batch_size 6
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.446
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.768
@@ -268,4 +268,11 @@ efficientdet640 20000, batch_size 6
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.482
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.637
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.542
+ 
+ 0426
+ 1. NMS algorithm 확인 및 구현 테스트
+ 2. retinanet code review
+ 3. threshold 바꿔가면서 전체 test set에 대해 test?
+    or 각 pass fail별로 특징 확인
+ 
 

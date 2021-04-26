@@ -279,4 +279,14 @@ efficientdet640 20000, batch_size 6
  https://github.com/BichenWuUCB/squeezeDet/blob/master/src/utils/util.py
  https://dyndy.tistory.com/275
  
+ 2. threshold에 따른 recall, precision (3500중 500개로 테스트)
+    0.2 : p 0.81, 0.64, f1 0.71 num_pred 1649
+    
+    0.25 : p 0.84, 0.62, f1 0.71 num_pred 1562
+    
+    0.3 :  p 0.86, r 0.60, f1 0.71 num_pred 1465
+    
+    0.4 : p 0.90 r 0.55 f1 0.68
+    
+    0.5 : p 0.97 r 0.48, f1 0.64, num_pred 1042
 

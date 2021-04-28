@@ -313,5 +313,18 @@ SCL, 5월달 data 받을 예정, 4개월 내에 AI model 개발(9월 안), 95%, 
 성모병원 컨소시엄, 4월 말 미팅, 2년 계획
 tensorflow object detection api 를 이용 tuning, + search위주로, code 리뷰 (pytorch 위주로)
 
+4/28
+object detection without anchorbox paper review
+centernet, cornernet, FCOS etc
+retinanet pytorch code reveiw
+kaggle retinanet training
+
+done
+1. cpc 관련 논문 리뷰( contrastive predictive coding, self supervised learning으로 uspervised learning을 뛰어 넘었다고)
+2. gradient cliping vs l2 regularization
+   g : 상대적인 비율을 이용, batch norm을 사용 안할시, gradient가 크게 나오는 것을 clipping으로 해결 가능
+   l2 : gradient의 절대적인 값을 이용
+   
+
 
 

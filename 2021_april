@@ -325,6 +325,11 @@ done
    g : 상대적인 비율을 이용, batch norm을 사용 안할시, gradient가 크게 나오는 것을 clipping으로 해결 가능
    l2 : gradient의 절대적인 값을 이용
    
+   
+4/29
+1. centernet training in server
+2. pytorch retinanet training with coco
+   
 
 
 

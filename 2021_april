@@ -345,6 +345,6 @@ efficientdetd1 640, batch_size 6, step size 353000, about 2.5 day fine tuning, l
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.729
  inference in pc is slow than ssd320, about 3 times more time is needed
 
- 98% detection accuracy
+ 98% detection accuracy, threshold = 0.15
 
 

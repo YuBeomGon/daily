@@ -1,0 +1,11 @@
+0503
+1. failed to create cublas handle: CUBLAS_STATUS_NOT_INITIALIZED error
+   error about memory allocation, use allow_growth=True (TF_FORCE_GPU_ALLOW_GROWTH=true)
+   https://stackoverflow.com/questions/38303974/tensorflow-running-error-with-cublas
+2. centernet related error
+   https://stackoverflow.com/questions/63552169/some-python-objects-were-not-bound-to-checkpointed-values
+   https://github.com/tensorflow/models/issues/8967
+   check the type(classfication or detection or fine_tune)
+   resnet didnt support detection
+
+

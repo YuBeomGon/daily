@@ -4,3 +4,5 @@
 keras_retinanet
 No module named 'keras_retinanet.utils.compute_overlap issue. 
 https://github.com/fizyr/keras-retinanet/issues/554
+
+tensorflow object detection api, for fine tuning centernet, use fine tune for checkpoit type.

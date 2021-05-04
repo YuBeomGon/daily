@@ -23,5 +23,9 @@ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.281
 Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.525
 Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.638
 
-
+Epoch 4 :   0%| | 0/19715 [3:44:06<?, ?batch/s, classification_loss=0.278, loss=0.722, regression_loss=0.All input tensors must be on the same device. Received cpu and cuda:0691/19715 [3:44:06<00:16,  1.49it/s]
+Epoch 4 :   0%| | 0/19715 [3:44:08<?, ?batch/s, classification_loss=0.331, loss=0.795, regression_loss=0.All input tensors must be on the same device. Received cpu and cuda:0694/19715 [3:44:08<00:13,  1.58it/s]
+Epoch 4 :   0%| | 0/19715 [3:44:12<?, ?batch/s, classification_loss=0.301, loss=0.748, regression_loss=0.All input tensors must be on the same device. Received cpu and cuda:0700/19715 [3:44:12<00:09,  1.58it/s]
+100%|████████████████████████████████████████████████████████████| 19715/19715 [3:44:22<00:00,  1.46it/s]
+Epoch 4 :   0%| | 0/19715 [3:44:22<?, ?batch/s, classification_loss=0.21, loss=0.544, regression_loss=0.3
 

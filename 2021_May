@@ -49,7 +49,7 @@ Epoch 4 :   0%| | 0/19715 [3:44:22<?, ?batch/s, classification_loss=0.21, loss=0
 Epoch 4 :   0%| | 0/19715 [3:53:35<?, ?batch/s, classification_loss=0.336, loss=0.8, regression_lo
 Evaluating dataset
 
-
+pytorch retinanet, coco dataset 5 epoch training, batch size 6, modified(1 more FPN is changed)
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.262
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.432
  Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.272
@@ -68,4 +68,20 @@ to do
 1. mobilenet, retinanet, etc code review and change.
    swin transformer code review
 2. mobilnet backbone centernet evaluation
+
+
+cenernet mobile backbone 30,0000 steps, batch_size=64
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.373
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.646
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.389
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.291
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.421
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.390
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.105
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.494
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.440
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.530
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.400
+
 

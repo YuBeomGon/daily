@@ -9,7 +9,7 @@
    resnet didnt support detection
    
 0504
-1. pytorch retinanet, coco dataset 5 epoch training, batch size 6
+1. pytorch retinanet, coco dataset 5 epoch training, batch size 6, legacy
 Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.262
 Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.431
 Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.273
@@ -28,4 +28,38 @@ Epoch 4 :   0%| | 0/19715 [3:44:08<?, ?batch/s, classification_loss=0.331, loss=
 Epoch 4 :   0%| | 0/19715 [3:44:12<?, ?batch/s, classification_loss=0.301, loss=0.748, regression_loss=0.All input tensors must be on the same device. Received cpu and cuda:0700/19715 [3:44:12<00:09,  1.58it/s]
 100%|████████████████████████████████████████████████████████████| 19715/19715 [3:44:22<00:00,  1.46it/s]
 Epoch 4 :   0%| | 0/19715 [3:44:22<?, ?batch/s, classification_loss=0.21, loss=0.544, regression_loss=0.3
+
+
+0507
+1. pytorch retinanet, coco dataset 5 epoch training, batch size 6, modified(1 more block after FPN layer)
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.253
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.265
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.117
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.279
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.360
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.254
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.419
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.468
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.275
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.520
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.633
+ Epoch 4 :   0%| | 0/19715 [3:52:17<?, ?batch/s, classification_loss=0.245, loss=0.71, regression_lAll input tensors must be on the same device. Received cpu and cuda:015 [3:52:17<01:11,  1.48it/s]
+100%|█████████████████████████████████████████████████████| 19715/19715 [3:53:35<00:00,  1.41it/s]
+Epoch 4 :   0%| | 0/19715 [3:53:35<?, ?batch/s, classification_loss=0.336, loss=0.8, regression_lo
+Evaluating dataset
+
+
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.262
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.432
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.272
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.120
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.287
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.373
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.256
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.423
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.476
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.274
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.531
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.638
 

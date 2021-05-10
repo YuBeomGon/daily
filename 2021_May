@@ -63,3 +63,9 @@ Evaluating dataset
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.531
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.638
 
+0510
+to do
+1. mobilenet, retinanet, etc code review and change.
+   swin transformer code review
+2. mobilnet backbone centernet evaluation
+

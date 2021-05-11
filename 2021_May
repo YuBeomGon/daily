@@ -84,4 +84,7 @@ cenernet mobile backbone 30,0000 steps, batch_size=64
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.530
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.400
 
-
+0512
+to do
+1. pytorch vision library , retinanet code 확인 후 
+   mobilenet backbone으로 변경하기

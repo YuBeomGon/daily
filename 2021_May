@@ -88,3 +88,9 @@ cenernet mobile backbone 30,0000 steps, batch_size=64
 to do
 1. pytorch vision library , retinanet code 확인 후 
    mobilenet backbone으로 변경하기
+   
+to do list
+1. 가상환경 gpu02가 아닌 hp에서 설정해야 하는지?? -> gpu02에서만 training이 된다. 
+2. 검체 이상 유무 파악하는 것 ai model에 추가?
+3. resnet101 backbone centernet fully test
+4. scl data 전달 관련 server 접속 안되는 이슈.

@@ -88,6 +88,9 @@ cenernet mobile backbone 30,0000 steps, batch_size=64
 to do
 1. pytorch vision library , retinanet code 확인 후 
    mobilenet backbone으로 변경하기
+2. centernen model 관련 전처리, config file의 feature extracter에 값을 넣을 수 있다. 없을 경우 mean, std(0, 1)이 channel 별로 들어간다.
+   또한 tf.keras에서 image_util에서 preprocess를 한다. 127.5로 나누고 1을 빼준다.
+3. mobile based centernet과 resnet based centernet이 preprocessing이 서로 다르다. 코드 확인 
    
 to do list
 1. 가상환경 gpu02가 아닌 hp에서 설정해야 하는지?? -> gpu02에서만 training이 된다. 

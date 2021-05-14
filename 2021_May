@@ -97,3 +97,11 @@ to do list
 2. 검체 이상 유무 파악하는 것 ai model에 추가?
 3. resnet101 backbone centernet fully test
 4. scl data 전달 관련 server 접속 안되는 이슈.
+
+0514
+to do
+1. customized learning rate scheduling per step
+2. evaluation code
+3. gradient checkpointing
+4. multi gpu processing
+5. code refactoring pytorch retina, 여러번 반복할수록 코드가 깔끔해진다.

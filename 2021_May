@@ -104,4 +104,5 @@ to do
 2. evaluation code
 3. gradient checkpointing
 4. multi gpu processing
+5. adaptive gradient clipping
 5. code refactoring pytorch retina, 여러번 반복할수록 코드가 깔끔해진다.

@@ -106,3 +106,11 @@ to do
 4. multi gpu processing
 5. adaptive gradient clipping
 5. code refactoring pytorch retina, 여러번 반복할수록 코드가 깔끔해진다.
+
+done
+1. customized learning rate scheduling per step
+   단순히 scheduler를 매 step마다 실행시키면 된다. 아니면 따로 만들어서 직접 optim의 learing rate을 변경해도 된다.
+2. multi gpu processing
+   model뿐 아니라 loss까지 multi gpu를 하려고 했으니 detection task에서 input 및 target이 여러개여서 실패함
+   추후 distributed training으로 다시 시도해 보자
+

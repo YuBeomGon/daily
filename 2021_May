@@ -159,3 +159,10 @@ total
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.024
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = -1.000
  
+ retinanet 640 backbone resnet 50에서 전반적으로 결과가 좋지 않다.
+ 해상도를 320으로 낮추고, classification copy, regression no initialization으로 변경
+ backbone을 bn을 제외하고 freezing
+ gradient clipping 0.1 -> 0.02, learning rate가 크더라도 clipping으로 인해 작은 값이 변경되며
+ 윗단에서 bn이 없기에 clipping을 잘 해줘야 될 것 같다.
+
+ 

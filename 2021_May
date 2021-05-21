@@ -113,4 +113,18 @@ done
 2. multi gpu processing
    model뿐 아니라 loss까지 multi gpu를 하려고 했으니 detection task에서 input 및 target이 여러개여서 실패함
    추후 distributed training으로 다시 시도해 보자
-
+   
+0521
+pytorch retinanet, 640*640, resnet50 backbone, 2 class, batchsize 32, 120 epochs, final total loss : 0.446
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.223
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.366
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.256
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.089
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.225
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.630
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.086
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.253
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.322
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.228
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.318
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.709

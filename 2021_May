@@ -165,4 +165,9 @@ total
  gradient clipping 0.1 -> 0.02, learning rate가 크더라도 clipping으로 인해 작은 값이 변경되며
  윗단에서 bn이 없기에 clipping을 잘 해줘야 될 것 같다.
 
- 
+ 0526
+1. tensorflow object detection api
+global batch_size 64 is not divisible by num_replicas_in_sync 3
+multi gpu의 개수가 batch size로 나누어지지 않아서 생긴 문제
+gpu 4개 할당 후 문제 없다.
+resnet101 backbone centernet을 random crop augmentation을 주고 training 시작

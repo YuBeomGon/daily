@@ -1,5 +1,19 @@
 0209
-1. CS229 3강
+1. CS229 3강(before logistic regression)
+  Maximul Likelyhoood and L2 Loss관계 in linear regression
+    https://towardsdatascience.com/probabilistic-interpretation-of-linear-regression-clearly-explained-d3b9ba26823b
+  locally weighted linear regression
+    https://www.geeksforgeeks.org/ml-locally-weighted-linear-regression/
 2. PVT and MMD code review
 3. 해석학 강의 
 4. PVT and MMD code review
+5. python
+   파이썬 메모리
+     https://nephtyws.github.io/python/interning/?fbclid=IwAR3SQKSyKYUdS8INiCIIwyrbAjMynZnsPsH4iCwd5AqUhq1OS2t7O0LSZXM
+   python compiler and runtime diagram
+     https://www.quora.com/How-does-a-Python-program-get-executed-Is-there-any-concept-of-compile-time-and-run-time-in-Python
+   JIT란
+     https://seastar105.tistory.com/136
+   python mutable vs immutable 
+     https://ledgku.tistory.com/54
+

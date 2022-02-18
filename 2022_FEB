@@ -17,3 +17,19 @@
    python mutable vs immutable 
      https://ledgku.tistory.com/54
 
+0215
+1. cs229 4강
+2. python study
+3. math study
+4. pvt training 가상환경 setting
+   nvcc -V은 which nvcc 경로에 있는 version을 보여줌
+   .bashrc file에서 PATH, LD_LIBRARY_PATH에서 잡아준 경로로 nvcc runtime 경로 잡힌다.
+
+0216
+1. APEX install
+2. nvidia dirver, cuda, cudnn 설치 관련 스터디
+   https://hwk0702.github.io/python/tips/2021/04/23/NVIDEA/
+3. flask serving 관련 platform 협의
+4. mmdet, mmcv code 확인
+
+   

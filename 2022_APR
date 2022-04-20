@@ -1,5 +1,5 @@
 0419
-1. Zero + lightning
+1. ZeRO(deepspeed) + lightning
 2. dynamic cnn
 3. gradient clipping customizing
 4. algebra study

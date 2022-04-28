@@ -4,3 +4,32 @@
 3. gradient clipping customizing
 4. algebra study
 5. time series, data science
+
+0428,
+nipa, inha mmd install
+# nvcc version check
+nvcc --version
+# check path of nvcc
+which nvcc
+#ls -al /usr/local/
+conda create -n scl
+conda activate scl
+# default cuda version is cuda11.0
+conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=11.0 -c pytorch
+pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu110/torch1.7.0/index.html
+pip install mmdet==2.13.0 --user
+pip install timm
+pip install gpustat
+
+#pytorch version check
+https://pytorch.org/get-started/previous-versions/
+
+1. lbp swin backbone retinanet 5x training from scratch
+
+비교 테스트 할 것
+2. supervised contrastive learning classfication
+3. focal loss
+4. custom sampler
+
+
+
